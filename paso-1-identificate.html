@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Seguros Mundial | Firma Electrónica</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    
+    
+    <div class="wrapper wrapper_inner paso_1">
+        <div class="logo">
+            <img src="images/logo-seguros-mundial.svg" alt="">
+        </div>
+        
+        <div class="content">
+            <div class="main_content">
+                <div class="title">
+                    <h1>Paso 1 de 3</h1>
+                </div>
+                
+                <div class="steps">
+                        <div class="step current">
+                            <span>1</span>
+                            Acepta <br> Condiciones
+                        </div>
+                        <div class="line"></div>
+                        <div class="step">
+                            <span>2</span>
+                            Autentícate
+                        </div>
+                        <div class="line"></div>
+                        <div class="step">
+                            <span>3</span>
+                            Firma
+                        </div>
+                    </div>
+                
+                <div class="panel">
+                    <h2><img src="images/firma_icon.png" alt=""> <span>Ingresa tu número de identificación, para visualizar el documento a Firmar.</span></h2>
+                    
+                    <form id="identificacion" action="">
+                        <div class="form-group">
+                          <select class="form-control" id="tipo_identificacion">
+                            <option>Tipo de documento</option>
+                            <option>Cédula</option>
+                            <option>Cédula de extranjería</option>
+                            <option>Pasaporte</option>
+                            <option>NIT</option>
+                          </select>
+                        </div>
+                        
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="id_number" placeholder="Número de identificación">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary link inactive" disabled>Validar Identificación</button>     
+                    </form>
+                </div>
+            </div>
+            
+            <footer>
+               <ul class="list-unstyled list-inline">
+                   <li class="list-inline-item"><a href="" class="link">¿Por qué firmar electrónicamente?</a></li>
+                   <li class="list-inline-item"><a href="">FAQ</a></li>
+               </ul>
+           </footer>
+        </div>
+        
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"
+    async defer></script>
+    
+    <script>
+    // Validate Recaptcha
+        document.getElementById("ingreso").addEventListener("submit", (evt) => {
+            
+            const response = grecaptcha.getResponse();
+            const error = document.querySelector('.error');
+            
+            console.log(error);
+                  
+            if(response.length == 0) { 
+                //reCaptcha not verified
+                error.className += ' show';
+                evt.preventDefault();
+                return false;
+            }
+        });
+    </script>
+    
+    
+    <script>
+    //Enable button when form fields are filled
+        
+        const validateForm = () => {
+            
+            const inputVal = $('#identificacion input').val();
+            const selectVal = $('#identificacion select').val();
+            
+            //console.log(selectVal, inputVal);
+            
+            if( inputVal != "" && selectVal != "Tipo de documento"){
+                $("button[type='submit']").removeAttr("disabled").removeClass('inactive');
+            } else {
+                $("button[type='submit']").attr("disabled", "disabled").addClass('inactive');
+            }
+        }
+    
+        $("#identificacion input").keyup(function(){
+            validateForm();
+        });
+        
+        $("#identificacion select").change( function() {
+            validateForm();
+        });
+    
+    </script>
+   
+   
+</body>
+</html>
