@@ -81,55 +81,14 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"
     async defer></script>
     
-    <script>
-    // Validate Recaptcha
-        document.getElementById("ingreso").addEventListener("submit", (evt) => {
-            
-            const response = grecaptcha.getResponse();
-            const error = document.querySelector('.error');
-            
-            console.log(error);
-                  
-            if(response.length == 0) { 
-                //reCaptcha not verified
-                error.className += ' show';
-                evt.preventDefault();
-                return false;
-            }
-        });
-    </script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.js" type="text/javascript"></script>
     
-    
-    <script>
-    //Enable button when form fields are filled
-        
-        const validateForm = () => {
-            
-            const inputVal = $('#identificacion input').val();
-            const selectVal = $('#identificacion select').val();
-            
-            //console.log(selectVal, inputVal);
-            
-            if( inputVal != "" && selectVal != "Tipo de documento"){
-                $("button[type='submit']").removeAttr("disabled").removeClass('inactive');
-            } else {
-                $("button[type='submit']").attr("disabled", "disabled").addClass('inactive');
-            }
-        }
-    
-        $("#identificacion input").keyup(function(){
-            validateForm();
-        });
-        
-        $("#identificacion select").change( function() {
-            validateForm();
-        });
-    
-    </script>
+    <script src="js/scripts.js"></script>
    
    
 </body>
