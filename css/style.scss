@@ -13,17 +13,23 @@ body {
 
 .wrapper {
     display: grid;
+    grid-template-columns: 1fr auto;
     background: $blue;
     
     &.wrapper_inner {
         min-height: 100vh;
         background: none;
         background-size: cover !important;
+        background-attachment: fixed !important;
+        
         
         .content {
+            position: relative;
+            grid-column: 2/3;
             justify-self: end;
             padding-right: 50px;
             display: grid;
+            grid-template-rows: auto auto auto;
             
             &:before {
                 content: '';
@@ -35,15 +41,37 @@ body {
                 background: $blue url('../images/dots.png') no-repeat;
                 clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
             }
+
+            .title {
+                position: relative;
+                width: 500px;
+                margin-top: 20px;
+                justify-self: end;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                z-index: 1000;
+                
+                h1 {
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+            }
             
             .main_content {
+                position: relative;
                 z-index: 10;
+                grid-row: 3/4;
                 display: grid;
+                grid-template-columns: 1fr;
                 margin-top: 20px;
                 
                 .title {
+                    position: relative;
                     width: 500px;
                     justify-self: end;
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+                    z-index: 1000;
                     
                     h1 {
                         font-weight: bold;
@@ -52,8 +80,10 @@ body {
                 }
                 
                 .panel {
+                    position: relative;
                     padding: 30px;
                     min-width: 600px;
+                    grid-row: 3/4;
                     
                     .panel_title {
                         display: flex;
@@ -67,19 +97,22 @@ body {
                         line-height: 1.3em;
                         border: none;
                         display: grid;
+                        grid-template-columns: auto auto;
                         align-items: center;
                         
                         img {
-                            
+                            width: 40px;
                             margin-right: 10px;
                             display: inline-block;
                             grid-row: 1/2;
+                            grid-column: 1/2;
                             
                         }
                         
                         span {
                             display: inline-block;
                             grid-row: 1/2;
+                            grid-column: 2/3;
                             
                         }
                     }
@@ -160,7 +193,9 @@ body {
         clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
         height: 100vh;
         grid-column: 1/2;
+        -ms-grid-column: 1/2;
         grid-row: 1/2;
+        -ms-grid-row: 1/2;
     } 
 }
 
@@ -169,17 +204,36 @@ body {
     justify-self: end;
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px;
+    grid-row: 2/3;
+    grid-column: 1/2;
     align-content: center;
-    margin-bottom: 20px;
-    
-    
+
+    div:nth-child(1){
+        grid-column: 1/2;
+    }
+    div:nth-child(2){
+        grid-column: 2/3;
+    }
+    div:nth-child(3){
+        grid-column: 3/4;
+    }
+    div:nth-child(4){
+        grid-column: 4/5;
+    }
+    div:nth-child(5){
+        grid-column: 5/6;
+    }
+
     .step {
+        position: relative;
         text-align: center;
         color: #fff;
         font-size: 14px;
         
         &.current {
+            position: relative;
             span {
+                position: relative;
                 background: $yellow;
             }
             color: $yellow;
@@ -250,13 +304,14 @@ a, button {
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
+    width: 220px;
     top: -10px;
     left: 50px;
     z-index: 10;
     
     img {
-        width: 250px;
+        width: 220px;
     }
 }
 
@@ -310,7 +365,7 @@ a, button {
 h1 {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
     strong {
         color: $yellow;
@@ -344,10 +399,12 @@ h1 {
 }
 
 footer {
+    position: relative;
     text-align: center;
-    z-index: 10;
+    z-index: 100;
     margin-bottom: 40px;
     margin-top: 40px;
+    grid-row: 4/5;
     
     
     ul {
@@ -399,9 +456,18 @@ footer {
 // 0. Ingresa
 
 .terms {
-    
+    grid-template-columns: 1fr 1fr;
     .content {
         grid-column: 1/2;
+        justify-self: center;
+
+        .title {
+            margin-top: 80px !important;
+
+            h1 {
+                font-size: 30px;   
+            }
+        }
     }
     
     .section_img {
@@ -420,6 +486,7 @@ footer {
                 
                 label, a {
                     color: $blue;
+                    font-size: 14px;
                 }
                 
                 a {
@@ -771,4 +838,80 @@ footer {
         }
     }
       
+  }
+
+  // Paso 3 - Firma
+
+
+  .paso_3 {
+    &.wrapper_inner {
+        background: url('../images/paso-3.jpg') center right;
+        background-position: center center;
+
+        .content {
+            .main_content {
+                .panel {
+                    max-width: 400px;
+        
+                    .resumen_firma {
+                        text-align: left;
+                        h3 {
+                            font-size: 16px;
+                        }
+                        .document_link {
+                            margin-bottom: 10px;
+                            a {
+                                color: $blue_light;
+                                display: inline;
+
+                                i {
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .list_icon {
+                                position: relative;
+                                background: url('../images/firmas_listado.png') no-repeat;
+                                margin-left: 5px;
+                                display: inline-block;
+                                width: 37px;
+                                height: 36px;
+                                top: 10px;
+                                transition:none;
+
+                                &:hover {
+                                    background-position: -37px 0;
+                                }
+                            }
+
+                            .firmantes_tabla {
+                                margin-top: 20px;
+                                display: none;
+                                h4 {
+                                    background: #4F4F4F;
+                                    color: #fff;
+                                    padding: 10px;
+                                    font-size: 16px;
+                                }
+                                table {
+                                    color: $blue_light;
+                                    font-size: 14px;
+
+                                    th {
+                                        font-size: 16px;
+                                    }
+
+                                    .active {
+                                        background: $blue_light;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+        
+                }
+            }
+        }
+    }
   }
