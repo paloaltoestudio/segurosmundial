@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
@@ -185,7 +186,8 @@
 
     <script>
     $(document).ready(()=> {
-        $('.list_icon').click(function(){
+        $('.list_icon').click(function(e){
+            e.preventDefault();
             $('.firmantes_tabla').slideToggle();
         });
     })

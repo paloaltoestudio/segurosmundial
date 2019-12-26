@@ -1,0 +1,104 @@
+$blue: #143345;
+$blue_light: #0799D5;
+$yellow: #F2E74B;
+
+@media all and (max-width:1200px){
+    .wrapper.wrapper_inner .content .main_content .panel {
+        max-width: 100%;
+        min-width: 0;
+        width: 95%;
+    }
+
+    .wrapper.wrapper_inner .content {
+        padding: 0;
+    }
+}
+@media all and (max-width:768px){
+    
+    .wrapper {
+        background: $blue;
+
+        &.wrapper_inner {
+            background: $blue;
+
+            .content {
+                justify-self:center;
+            }
+        }
+    }
+
+    
+    .logo {
+        position: relative;
+        width: 200px;
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        justify-self: center;
+        left: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+    .wrapper.wrapper_inner .content {
+        background: $blue;
+        margin-top: 20px;
+        grid-column: 1/-1;
+    }
+
+    .wrapper.wrapper_inner .content:before {
+        background: none;
+        display: none;
+    }
+
+    .wrapper.wrapper_inner .content .title {
+        justify-self: center;
+        grid-column: 1/-1;
+        width: 100%;
+    }
+
+    .steps {
+        justify-self: center;
+    }
+
+    .wrapper.wrapper_inner .content footer {
+        justify-self: center;
+        width: 100%;
+    }
+
+    #code {
+        width: 100%;
+    }
+
+    #code .form-group {
+        width: 100%;
+    }
+
+    .conocimiento.wrapper_inner .content .main_content .panel {
+        width: 90% !important;
+    }
+}
+
+@media all and (max-width:500px){
+    .steps {
+        grid-template-columns: 80px 20px 80px 20px 80px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link.secondary {
+        justify-self: center;
+    }
+    .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link {
+        justify-self: center;
+    }
+
+    .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
+        margin: 20px 0;
+    }
+}
