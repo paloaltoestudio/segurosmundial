@@ -18,6 +18,7 @@ body {
     &.wrapper_inner {
         min-height: 100vh;
         background: none;
+        background-size: cover !important;
         
         .content {
             justify-self: end;
@@ -38,7 +39,7 @@ body {
             .main_content {
                 z-index: 10;
                 display: grid;
-                margin-top: 50px;
+                margin-top: 20px;
                 
                 .title {
                     width: 500px;
@@ -46,11 +47,12 @@ body {
                     
                     h1 {
                         font-weight: bold;
+                        font-size: 30px;
                     }
                 }
                 
                 .panel {
-                    padding: 60px;
+                    padding: 30px;
                     min-width: 600px;
                     
                     .panel_title {
@@ -95,7 +97,7 @@ body {
                     
                     .link {
                         text-transform: none;
-                        margin-top: 50px;
+                        margin-top: 20px;
                     }
                     
                     form {
@@ -125,7 +127,7 @@ body {
                         
                         button, .link {
                             text-transform: none;
-                            margin-top: 50px;
+                            margin-top: 20px;
                             
                             i {
                                 margin-left: 20px;
@@ -168,12 +170,13 @@ body {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px 100px;
     align-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     
     
     .step {
         text-align: center;
         color: #fff;
+        font-size: 14px;
         
         &.current {
             span {
@@ -204,8 +207,8 @@ body {
         }
         
         span {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             margin: auto;
             margin-bottom: 10px;
             display: block;
@@ -216,7 +219,7 @@ body {
             color: $blue;
             font-size: 18px;
             font-weight: bold;
-            line-height: 30px;
+            line-height: 20px;
         }
     }
     
@@ -265,6 +268,8 @@ a, button {
     color: #fff;
     text-decoration: none;
     display: inline-block;
+    font-size: 14px;
+     
     cursor: pointer;
     
     &:hover {
@@ -282,6 +287,13 @@ a, button {
             color: #fff;
             border-color: $blue_light;;
         }
+    }
+
+    &.outline {
+        background: none;
+        border-color: $blue_light;
+        color: $blue_light;
+        display: inline-block;          
     }
 }
 
@@ -317,8 +329,7 @@ h1 {
         font-size: 25px;
         font-weight: bold;
         color: $blue_light;
-        padding-bottom: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         border-bottom: 2px solid $blue_light;
     }
     
@@ -490,3 +501,274 @@ footer {
         }
     }
 }
+
+// 2. Paso 2 - Código
+
+#code {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+
+    .remaining_time {
+        .title_timer {
+            color: $blue_light;
+            display: block;
+        }
+
+        #timer {
+            font-size: 35px;
+        }
+
+        .bar {
+            position: relative;
+            width: 100%;
+            height: 15px;
+            background: #ccc;
+            margin-bottom: 10px;
+
+            .bar_line {
+                width: 100%;
+                height: 15px;
+                background: $yellow;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+    
+    .form-group {   
+        width: 400px; 
+        margin:auto;                   
+    }
+
+    label {
+        text-align: center;
+        color: #000;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    input {
+        margin: 0 5px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 30px;
+        outline: none;
+        width: 20%;
+        transition: all .2s ease-in-out;
+        border: none;
+        border-bottom: 2px solid $blue_light;         
+        
+        &:focus {
+          border-color:$yellow;
+        }
+        
+        &::selection {
+          background: transparent;
+        }
+      }
+
+      .links {
+          justify-content: center;
+          margin-bottom: 20px;
+          .link {
+              width: 100%;
+          }
+      }
+
+      .outline {
+          width: auto;  
+          &:hover {
+              background: $blue_light;  
+              color: #fff;    
+          }
+      }
+}
+
+.progressbar {
+    width: 100%;
+    margin: 0px auto;
+    background: #ccc;
+  }
+  .progressbar .inner {
+    height: 15px;
+    animation: progressbar-countdown;
+    /* Placeholder, this will be updated using javascript */
+    animation-duration: 10s;
+    /* We stop in the end */
+    animation-iteration-count: 1;
+    /* Stay on pause when the animation is finished finished */
+    animation-fill-mode: forwards;
+    /* We start paused, we start the animation using javascript */
+    animation-play-state: paused;
+    /* We want a linear animation, ease-out is standard */
+    animation-timing-function: linear;
+  }
+  @keyframes progressbar-countdown {
+    0% {
+      width: 100%;
+      background: $yellow;
+    }
+    100% {
+      width: 0%;
+      background: #F00;
+    }
+  }
+
+  // 2. Paso 2 - preguntas
+
+  .preguntas {
+      .panel{
+          .links {
+              display: block;   
+          }
+
+          .question_counter {
+              background: $blue_light;
+              padding: 10px 20px;
+              color: #fff;
+              display: inline-block;
+              margin-bottom: 10px;
+              border-radius: 30px;
+          }
+
+          form {
+              .radio_question {
+                  background: #E6E6E6;
+                  border-radius: 20px;
+                  padding: 10px 20px;
+                  color: #4F4F4F !important;
+                  display: grid !important;   
+                  grid-template-columns: auto auto;
+                  align-items:center;
+                  cursor: pointer;
+
+                  &:hover, &.active {
+                      background: $blue_light;
+                      color: #fff !important;
+
+                      .checkmark {
+                          background: #fff;
+
+                          &:after {
+                              opacity: 1;
+                          }
+                      }
+                  }
+
+                  input:checked ~ .checkmark {
+                    background: #fff;
+
+                    &:after {
+                        opacity: 1;
+                    }
+                  }
+
+                  span {
+                    grid-row: 1/2;  
+                  }
+
+                  .input {
+                    position: relative;
+                    grid-row: 1/2;
+                    justify-self: end;
+                  }
+
+                  .checkmark {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 25px;
+                      height: 25px;
+                      background: #C8C8C8;
+                      border-radius: 100%;
+
+                      &:after {
+                          content: '\f061';
+                          position: absolute;
+                          font-family: "Font Awesome 5 Free";
+                          font-weight: 900;
+                          color: $blue_light;
+                          margin-left: 5px;
+                          opacity: 0;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  // Paso 2 - COnocimiento
+
+  .conocimiento {
+
+    &.wrapper_inner {
+        .content {
+            .main_content {
+                .panel {
+                    width: 800px !important;
+
+                    p{
+                        color: $blue;
+                    }
+          
+                    form {
+                        h2 {
+                            background: $blue_light;
+                            color: #fff;
+                            text-align: left;
+                            font-weight: normal;
+                            font-size: 16px;
+                            padding: 10px 20px;
+                        }
+
+                        p {
+                            color: $blue;
+                            text-align: left;
+                            font-size: 14px;
+                            padding: 0 20px;
+                        }
+
+                      .form-control {
+                          border: 1px solid #ccc;
+                      }
+                    }
+          
+                    .conocimiento_nav {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        margin-top: 20px;
+
+                        .link {
+                           justify-self: end;
+                           margin-top: 0;
+
+                           &.secondary {
+                            justify-self: start;
+                           }
+                        }
+
+                        .pagination {
+                            align-items: center;
+                            justify-content:center;
+
+                            .page-link {
+                                width: 35px;
+                                height: 35px;
+                                border: none;
+                                border-radius: 100%;
+                                margin: 0 2px;
+                                line-height: 17px;
+                                text-align: center;
+
+                                &:hover, &.active {
+                                    background: $blue_light;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+      
+  }
