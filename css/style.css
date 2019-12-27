@@ -855,6 +855,29 @@ footer ul li .link:hover {
   display: block;
 }
 
+.preguntas .panel .question {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.preguntas .panel .question.current_q {
+  position: relative;
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+}
+
+.preguntas .panel .question .remove_q {
+  position: relative;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
 .preguntas .panel .question_counter {
   background: #0799D5;
   padding: 10px 20px;
@@ -1090,5 +1113,14 @@ footer ul li .link:hover {
 .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table .active {
   background: #0799D5;
   color: #fff;
+}
+
+.error_msg.wrapper_inner {
+  background: url("../images/error.jpg");
+  background-position: -300px center;
+}
+
+.error_msg.wrapper_inner .panel {
+  max-width: 400px;
 }
 /*# sourceMappingURL=style.css.map */

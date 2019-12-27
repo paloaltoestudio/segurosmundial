@@ -770,6 +770,29 @@ footer {
               display: block;   
           }
 
+          .question {
+              position: absolute;
+              opacity: 0;
+              visibility: hidden;
+              top: 80px;
+              transition: all 0.2s ease-in-out;
+
+              &.current_q {
+                  position: relative;
+                  opacity: 1;
+                  top: 0;
+                  visibility: visible;
+              }
+
+              .remove_q {
+                  position: relative;
+                  top: 0;
+                  opacity: 0;
+                  visibility: hidden;
+              }
+          }
+
+
           .question_counter {
               background: $blue_light;
               padding: 10px 20px;
@@ -1002,4 +1025,17 @@ footer {
             }
         }
     }
+  }
+
+  // Error
+
+  .error_msg {
+      &.wrapper_inner {
+          background: url('../images/error.jpg');
+          background-position: -300px center;
+
+          .panel {
+              max-width: 400px;
+          }
+      }
   }

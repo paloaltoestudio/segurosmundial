@@ -209,6 +209,21 @@ $('.modal_send_id').click(function(e){
 
 // Invalid document id modal
 $('.panel_title').click(function(e){
-    $('#no_valida').modal('show');
+    $('#no_valida').modal({ backdrop: 'static', keyboard: true });
 })
+
+
+// Next question
+const nextQuestion = function(n){
+  $('.trigger_q_'+n).click(function(e){
+    e.preventDefault();
+    console.log(n);
+    $('.question.current_q').removeClass('current_q').hide();
+    $('.question.q_'+n).addClass('current_q');
+  });
+}
+nextQuestion(2);
+nextQuestion(3);
+nextQuestion(4);
+
 
