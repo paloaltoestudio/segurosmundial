@@ -179,9 +179,36 @@ createProgressbar('progressbar1', barTime + 's');
 }
 
 // checked answer element
-
 $('.input input').click(function(e){
     console.log(e.target);
     $('.radio_question').removeClass('active');
     $(this).closest('.radio_question').toggleClass('active');
 });
+
+
+// Close and send modal notifications
+$('.modal_send').click(function(e){
+    e.preventDefault();
+    $('#solicitud_modificaciones').modal('hide');
+   
+
+    setTimeout(function(){
+        $('#modificacion_enviada').modal('show');
+    }, 500);
+});
+
+$('.modal_send_id').click(function(e){
+    e.preventDefault();
+    $('#no_valida').modal('hide');
+
+    setTimeout(function(){
+        $('#modificacion_enviada').modal('show');
+    }, 500);
+});
+
+
+// Invalid document id modal
+$('.panel_title').click(function(e){
+    $('#no_valida').modal('show');
+})
+

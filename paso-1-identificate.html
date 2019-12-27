@@ -48,11 +48,14 @@
                 </div>
             <div class="main_content">
                 <div class="panel">
+                    <div class="panel_title">
                     <h2><img src="images/firma_icon.png" alt=""> <span>Ingresa tu número de identificación, para visualizar el documento a Firmar.</span></h2>
+                    </div>
                     
                     <form id="identificacion" action="">
                         <div class="form-group">
-                          <select class="form-control" id="tipo_identificacion">
+                          <img class="field_icon" src="images/id_icon.png" alt="">
+                          <select class="form-control field_icon" id="tipo_identificacion">
                             <option>Tipo de documento</option>
                             <option>Cédula</option>
                             <option>Cédula de extranjería</option>
@@ -62,10 +65,10 @@
                         </div>
                         
                         <div class="form-group">
-                          <input type="text" class="form-control" id="id_number" placeholder="Número de identificación">
+                          <input type="text" class="form-control field_icon" id="id_number" placeholder="Número de identificación">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary link inactive" disabled>Validar Identificación</button>     
+                        <button type="submit" class="btn btn-primary link validate_id inactive" disabled>Validar Identificación</button>     
                     </form>
                 </div>
             </div>
@@ -77,9 +80,49 @@
                </ul>
            </footer>
         </div>
-        
-        
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="no_valida" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal_sm">
+              <h3>Identificación no válida</h3>
+              <p>La identificación que ingresaste no es válida para el proceso de firma a realizar.</p>
+
+              <form action="">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Si el número de identificación que ingresaste es correcto, déjanos en este espacio un comentario con tu número de documento."></textarea>
+
+                  <p>Para revisar si ingresaste correctamente tu número de documento, da clic en el botón "Regresar"</p>
+
+                  <div class="btn_group">
+                      <a href="#" class="link secondary" data-dismiss="modal">Regresar</a>
+                      <a href="" class="link modal_send_id">Enviar información</a>
+                  </div>
+              </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="modificacion_enviada" tabindex="-1" role="dialog" aria-labelledby="modificacion_enviada" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal_sm">
+              <img src="images/emoticon_feliz.png" alt="">
+              <h3>Información enviada</h3>
+              <p>Gracias por enviarnos tu comentario.</p>
+              <p>Pronto un analista de Seguros Mundial atenderá tu solicitud.</p>
+              <a href="#" class="link" data-dismiss="modal">Cerrar</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

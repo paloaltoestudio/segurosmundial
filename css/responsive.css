@@ -14,7 +14,7 @@
     background: #143345;
   }
   .wrapper.wrapper_inner {
-    background: #143345;
+    background: #143345 !important;
   }
   .wrapper.wrapper_inner .content {
     -ms-grid-column-align: center;
@@ -95,6 +95,14 @@
   }
   .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
     margin: 20px 0;
+  }
+  .modal_sm .btn_group {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .modal_sm .btn_group .link {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

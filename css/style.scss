@@ -101,7 +101,7 @@ body {
                         align-items: center;
                         
                         img {
-                            width: 40px;
+                            width: 60px;
                             margin-right: 10px;
                             display: inline-block;
                             grid-row: 1/2;
@@ -373,6 +373,12 @@ h1 {
     }
 }
 
+
+.field_icon {
+    display: inline-block;
+    width: auto;
+}
+
 .panel {
     background: #fff;
     border-radius: 8px;
@@ -513,12 +519,65 @@ footer {
     }
 }
 
+.modal-backdrop {
+    background: $blue;
+}
 
-//1. Paso 1
+.modal-backdrop.show {
+    opacity: 0.9;
+}
+
+.modal_sm {
+    padding: 20px;
+    text-align: center;
+    img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 20px;
+        color: $blue_light;
+        margin-bottom: 20px;  
+        text-align: center;
+    }
+
+    textarea {
+        resize: none;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .link {
+        padding: 5px 20px;
+    }
+
+    .btn_group {
+        display: grid;
+        grid-template-columns: auto 10px auto;
+
+        .link {
+            text-align: center;
+            grid-column: 3/4;
+
+            &.secondary {
+                grid-column: 1/2;
+            }
+        }
+    }
+}
+
+#no_valida {
+    p {
+        color: $blue_light;
+    }
+}
+
+
+// Paso 1
 
 .paso_1 {
     &.wrapper_inner {
-        background: url('../images/paso-1.jpg') center right;
+        background: url('../images/paso-1.jpg') -500px center;
         
         .panel {
             max-width: 400px;
@@ -526,7 +585,7 @@ footer {
     }
 }
 
-// 1. Paso 1 - Revisar documento
+// Paso 1 - Revisar documento
 
 .paso_1.paso_1_documento {
     background-size: cover;
@@ -576,12 +635,20 @@ footer {
                     width: auto;
                     display: inline;
                 }
+
+                .gj-icon {
+                    color: $blue_light;
+                }
             }
         }
     }
 }
 
 // 2. Paso 2 - Código
+.paso_2.codigo.wrapper_inner {
+    background: url('../images/paso-2-codigo.png');
+    background-position: -500px;
+}
 
 #code {
     text-align: center;
@@ -693,8 +760,11 @@ footer {
   }
 
   // 2. Paso 2 - preguntas
-
   .preguntas {
+      &.wrapper.wrapper_inner {
+        background: url('../images/paso-2-codigo.png');
+        background-position: -500px;
+      }
       .panel{
           .links {
               display: block;   
@@ -861,11 +931,10 @@ footer {
   }
 
   // Paso 3 - Firma
-
   .paso_3 {
     &.wrapper_inner {
         background: url('../images/paso-3.jpg') center right;
-        background-position: center center;
+        background-position: -320px center;
 
         .content {
             .main_content {

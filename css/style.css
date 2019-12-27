@@ -131,7 +131,7 @@ body {
 }
 
 .wrapper.wrapper_inner .content .main_content .panel h2 img {
-  width: 40px;
+  width: 60px;
   margin-right: 10px;
   display: inline-block;
   -ms-grid-row: 1;
@@ -431,6 +431,11 @@ h1 strong {
   display: block;
 }
 
+.field_icon {
+  display: inline-block;
+  width: auto;
+}
+
 .panel {
   background: #fff;
   border-radius: 8px;
@@ -574,8 +579,67 @@ footer ul li .link:hover {
   text-decoration: none;
 }
 
+.modal-backdrop {
+  background: #143345;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+}
+
+.modal_sm {
+  padding: 20px;
+  text-align: center;
+}
+
+.modal_sm img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.modal_sm h3 {
+  font-size: 20px;
+  color: #0799D5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal_sm textarea {
+  resize: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.modal_sm .link {
+  padding: 5px 20px;
+}
+
+.modal_sm .btn_group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 10px auto;
+      grid-template-columns: auto 10px auto;
+}
+
+.modal_sm .btn_group .link {
+  text-align: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.modal_sm .btn_group .link.secondary {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+#no_valida p {
+  color: #0799D5;
+}
+
 .paso_1.wrapper_inner {
-  background: url("../images/paso-1.jpg") center right;
+  background: url("../images/paso-1.jpg") -500px center;
 }
 
 .paso_1.wrapper_inner .panel {
@@ -634,6 +698,15 @@ footer ul li .link:hover {
 .paso_2.wrapper_inner .panel form .link {
   width: auto;
   display: inline;
+}
+
+.paso_2.wrapper_inner .panel form .gj-icon {
+  color: #0799D5;
+}
+
+.paso_2.codigo.wrapper_inner {
+  background: url("../images/paso-2-codigo.png");
+  background-position: -500px;
 }
 
 #code {
@@ -771,6 +844,11 @@ footer ul li .link:hover {
     width: 0%;
     background: #F00;
   }
+}
+
+.preguntas.wrapper.wrapper_inner {
+  background: url("../images/paso-2-codigo.png");
+  background-position: -500px;
 }
 
 .preguntas .panel .links {
@@ -944,7 +1022,7 @@ footer ul li .link:hover {
 
 .paso_3.wrapper_inner {
   background: url("../images/paso-3.jpg") center right;
-  background-position: center center;
+  background-position: -320px center;
 }
 
 .paso_3.wrapper_inner .content .main_content .panel {

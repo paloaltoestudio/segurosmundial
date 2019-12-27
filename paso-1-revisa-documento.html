@@ -63,7 +63,7 @@
                     <p>Si no estás de acuerdo con alguna parte del documento o los datos registrados, por favor da clic en el botón <strong>"Solicitar modificaciones"</strong>.</p>
                     
                     <div class="links">
-                        <a href="#" class="link secondary">Solicitar modificaciones</a> 
+                        <a href="#" class="link secondary" data-toggle="modal" data-target="#solicitud_modificaciones">Solicitar modificaciones</a> 
                         <a href="#" class="link">Iniciar firma digital</a> 
                     </div>  
                 </div>
@@ -76,9 +76,46 @@
                </ul>
            </footer>
         </div>
-        
-        
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="solicitud_modificaciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal_sm">
+              <h3>Solicitud modificaciones al documento</h3>
+
+              <form action="">
+                  <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Por favor registra en este espacio las modificaciones que requieres se realicen al documento"></textarea>
+
+                  <div class="btn_group">
+                      <a href="#" class="link secondary" data-dismiss="modal">Cancelar</a>
+                      <a href="" class="link modal_send">Enviar solicitud de modificaciones</a>
+                  </div>
+              </form>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modificacion_enviada" tabindex="-1" role="dialog" aria-labelledby="modificacion_enviada" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal_sm">
+              <img src="images/emoticon_feliz.png" alt="">
+              <h3>Información enviada</h3>
+              <p>Gracias por enviarnos tu comentario.</p>
+              <p>Pronto un analista de Seguros Mundial atenderá tu solicitud.</p>
+              <a href="#" class="link" data-dismiss="modal">Cerrar</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

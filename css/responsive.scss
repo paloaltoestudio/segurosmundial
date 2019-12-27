@@ -19,7 +19,7 @@ $yellow: #F2E74B;
         background: $blue;
 
         &.wrapper_inner {
-            background: $blue;
+            background: $blue !important;
 
             .content {
                 justify-self:center;
@@ -100,5 +100,14 @@ $yellow: #F2E74B;
 
     .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
         margin: 20px 0;
+    }
+
+    .modal_sm .btn_group {
+        grid-template-columns: auto;
+
+        .link {
+            grid-column: 1/-1;
+            margin-bottom: 20px;
+        }
     }
 }
