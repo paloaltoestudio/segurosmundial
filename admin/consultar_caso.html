@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Seguros Mundial | Firma Electrónica</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="css/style_admin.css">
+    <link rel="stylesheet" href="css/responsive_admin.css">
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="top_line"></div>
+
+    <div class="admin_wrapper">
+        <div class="admin_top">
+            <div class="logo">
+                <img src="images/logo-seguros-mundial.png" alt="">
+            </div>
+
+            <h1>Portal de firma electrónica</h1>
+
+            <div class="admin_right">
+                <div class="admin_right_info">
+                    <a href="">Cerrar Sesión</a>
+                    <a href=""><img src="images/user_icon.svg" alt="">ARODRIGUEZ</a>
+                </div>
+                <img src="images/admin_top_img.png" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul class="list-unstyled">
+                <li><a class="" href=""><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li>
+                    <a href="#casos_submenu" data-toggle="collapse" aria-expanded="true"
+                        class="active dropdown-toggle"><i class="fas fa-search"></i> Consultas</a>
+                    <ul class="collapse show list-unstyled" id="casos_submenu">
+                        <li>
+                            <a href="#"><i class="fas fa-folder"></i> Casos</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-file-alt"></i> Documentos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fas fa-plus"></i> Crear Caso</a></li>
+                <li><a href=""><i class="fas fa-chart-pie"></i> Reportes</a></li>
+                <li>
+                    <a href="#admin_submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-cog"></i> Administración</a>
+                    <ul class="collapse list-unstyled" id="admin_submenu">
+                        <li>
+                            <a href="#"><i class="fas fa-cog"></i> Generales</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-server"></i> Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-user"></i> Usuarios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="consultar_caso">
+                <div class="container-fluid">
+                    <h2><i class="fas fa-search"></i> Consultar caso</h2>
+
+                    <div class="filters">
+                        <h3><i class="fas fa-filter"></i> Filtros</h3>
+
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">No. de solicitud</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">No. de solicitud Aurapotal</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">No. de identificación</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Apellidos</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Razón Social</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">NIT</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Desde</label>
+                                        <input id="datepicker1" type="text" class="datapicker form-control" placeholder="mm/dd/aaaa">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Hasta</label>
+                                        <input id="datepicker2" type="text" class="datapicker      form-control" placeholder="mm/dd/aaaa">
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Tipo de documento</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Selecciona uno</option>
+                                            <option value="">CC</option>
+                                            <option value="">NIT</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Estado de la solicitud</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Selecciona uno</option>
+                                            <option value="">Exitosa</option>
+                                            <option value="">En proceso</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-group">
+                                        <label for="">Estado de la firma</label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Selecciona uno</option>
+                                            <option value="">Firmada</option>
+                                            <option value="">No firmada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="table-responsive-xl">
+                        <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th colspan="10" scope="col">
+                                    <h4>Casos</h4>
+                                </th>
+                              </tr>
+                            </thead>
+                            <thead class="thead-light">
+                                <tr>
+                                  <th scope="col">No. Caso</th>
+                                  <th scope="col">No. Radicado</th>
+                                  <th scope="col">Estado de la solicitud</th>
+                                  <th scope="col">No. de firmantes</th>
+                                  <th scope="col">Tipo de documento</th>
+                                  <th scope="col">Fecha de firmado </th>
+                                  <th scope="col">Identificación Tomador </th>
+                                  <th scope="col">Nombre Tomador </th>
+                                  <th scope="col">Analista</th>
+                                  <th scope="col">Acciones</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                              <tr>
+                               
+                                <td><a class="case_link" href="#" data-toggle="modal" data-target="#modal_detail_case">00001 <i class="fas fa-search-plus"></i></a></td>
+                                <td>10034</td>
+                                <td><div class="tag success">Exitosa</div></td>
+                                <td>3</td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
+                                <td>Nov 02/19</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td>Analista 1</td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
+                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a class="case_link" href="">00001 <i class="fas fa-search-plus"></i></a></td>
+                                <td>10034</td>
+                                <td><div class="tag process">En proceso</div></td>
+                                <td>3</td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
+                                <td></td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td>Analista 1</td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
+                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a class="case_link" href="">00001 <i class="fas fa-search-plus"></i></a></td>
+                                <td>10034</td>
+                                <td><div class="tag success">Exitosa</div></td>
+                                <td>3</td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
+                                <td>Nov 02/19</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td>Analista 1</td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
+                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a class="case_link" href="">00001 <i class="fas fa-search-plus"></i></a></td>
+                                <td>10034</td>
+                                <td><div class="tag fail">No exitosa</div></td>
+                                <td>3</td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
+                                <td>Nov 02/19</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td>Analista 1</td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
+                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<!-- Modal Detalle del Caso -->
+<div class="modal fade" id="modal_detail_case" tabindex="-1" role="dialog" aria-labelledby="modal_detail_case"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal_detail_case">
+                    <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th colspan="10" scope="col">
+                                    <h4>Detalle del caso No. 00001</h4>
+                                    <a href="" class="close_modal" data-dismiss="modal"><i class="fas fa-times"></i></a>
+                                </th>
+                              </tr>
+                            </thead>
+                            <thead class="thead-light">
+                                <tr>
+                                  <th scope="col">No. Caso</th>
+                                  <th scope="col">Identificación  </th>
+                                  <th scope="col">Nombre Firmante</th>
+                                  <th scope="col">Estado de la firma</th>
+                                  <th scope="col">Fecha de firmado </th>
+                                  <th scope="col">Observaciones</th>
+                                  <th scope="col">Documento a firmar</th>
+                                  <th scope="col">Acciones</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                              <tr>
+                                <td>00001</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td><div class="tag success">Firmado</div></td>
+                                <td>Nov 02/19</td>
+                                <td><a href="" data-toggle="modal" data-target="#modal_observation_detail">Lorem ipsum dolor</a></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato <i class="fas fa-file-pdf"></i></a></td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon send_signature disabled" href="#!"><i class="fas fa-share"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                               <tr>
+                                <td>00001</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td><div class="tag fail">No firmado</div></td>
+                                <td>Nov 02/19</td>
+                                <td><a href="" data-toggle="modal" data-target="#modal_observation_detail">Lorem ipsum dolor</a></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato <i class="fas fa-file-pdf"></i></a></td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon send_signature disabled" href="#!"><i class="fas fa-share"></i></a>
+                                    </div>
+                                </td>
+                              </tr> 
+                               <tr>
+                                <td>00001</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td><div class="tag process">Sin enviar</div></td>
+                                <td></td>
+                                <td><a href="" data-toggle="modal" data-target="#modal_observation_detail">Lorem ipsum dolor</a></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato <i class="fas fa-file-pdf"></i></a></td>
+                                <td>
+                                    <div class="actions">
+                                        <a class="more_icon send_signature" href="" data-toggle="modal" data-target="#modal_sent_signature"><i class="fas fa-share"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- Modal Borrar Caso -->
+<div class="modal fade" id="modal_delete_case" tabindex="-1" role="dialog" aria-labelledby="modal_delete_case"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="" class="close_modal" data-dismiss="modal"><i class="fas fa-times"></i></a>
+                <div class="modal_delete">
+                    <p>¿Está seguro que desea eliminar el caso 00001?</p>
+                    <a href="#" class="link">si, estoy seguro</a>
+                    <a href="#" class="link delete" data-dismiss="modal">No, cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<!-- Modal Enviar Caso -->
+<div class="modal fade" id="modal_sent_signature" tabindex="-1" role="dialog" aria-labelledby="modal_sent_signature"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="" class="close_modal" data-dismiss="modal"><i class="fas fa-times"></i></a>
+                <div class="modal_delete">
+                    <p>Solicitud de firma enviada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Detalle Observación -->
+<div class="modal fade" id="modal_observation_detail" tabindex="-1" role="dialog" aria-labelledby="modal_observation_detail"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="" class="close_modal" data-dismiss="modal"><i class="fas fa-times"></i></a>
+                <div class="modal_observation">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra, a molestie bibendum quis diam netus lacus, torquent urna mi sociosqu nascetur vivamus fusce. Hac sed lacinia purus integer scelerisque dis interdum accumsan egestas enim, porttitor eros curae quisque nullam netus risus fusce. Rutrum molestie eget phasellus feugiat tempus magnis egestas luctus mollis taciti felis risus purus, cubilia praesent porttitor proin varius diam mauris class litora mattis neque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.js" type="text/javascript"></script>
+
+    <script src="js/scripts_admin.js"></script>
+</body>
+
+</html>
