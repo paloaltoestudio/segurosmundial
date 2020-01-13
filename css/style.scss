@@ -1034,8 +1034,22 @@ footer {
           background: url('../images/error.jpg');
           background-position: -300px center;
 
-          .panel {
-              max-width: 400px;
+          .content {
+              .main_content {
+                .panel {
+                    max-width: 400px;
+                    text-align: center;
+                    padding: 50px 20px;
+      
+                    h2 {
+                        grid-template-columns: auto !important;
+                    }
+
+                    p {
+                        color: $blue;
+                    }
+                }
+              }
           }
       }
   }
