@@ -1,60 +1,55 @@
-@media all and (max-width: 960px) {
+@media all and (max-width: 991px) {
+  /* line 2, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
+  .sidebar {
+    padding: 10px 0; }
+  /* line 7, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
+  .navbar-toggler:focus {
+    outline: 0; }
+  /* line 10, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
+  .navbar-toggler i {
+    color: #fff; }
+  /* line 15, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .admin_wrapper {
-    -ms-grid-rows: 125px auto auto;
-        grid-template-rows: 125px auto auto;
-  }
+    grid-template-rows: 125px auto auto; }
+  /* line 19, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .sidebar {
     grid-column: 1/-1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
     height: auto;
-    text-align: center;
-  }
-  .sidebar ul a {
-    padding-left: 0;
-  }
+    text-align: center; }
+    /* line 26, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
+    .sidebar ul a {
+      padding-left: 0; }
+  /* line 32, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .content {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-  }
+    grid-row: 3/4; }
+  /* line 38, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .admin_top .admin_right > img {
-    display: none;
-  }
+    display: none; }
+  /* line 44, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .content {
-    grid-column: 1/-1;
-  }
-}
+    grid-column: 1/-1; } }
 
 @media all and (max-width: 768px) {
+  /* line 51, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .admin_wrapper {
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-  }
+    grid-template-rows: auto auto; }
+  /* line 55, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .admin_top {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
-  }
-  .admin_top .logo img {
-    width: 200px;
-  }
-  .admin_top h1 {
-    grid-column: 1/-1;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    text-align: center;
-    width: 100%;
-    margin: 20px 0;
-  }
+    grid-template-columns: auto auto; }
+    /* line 59, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
+    .admin_top .logo img {
+      width: 200px; }
+    /* line 64, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
+    .admin_top h1 {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+      text-align: center;
+      width: 100%;
+      margin: 20px 0; }
+  /* line 73, /Applications/MAMP/htdocs/segurosmundial/admin/css/responsive_admin.scss */
   .admin_right {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-}
+    grid-row: 1/2; } }
+
 /*# sourceMappingURL=responsive_admin.css.map */

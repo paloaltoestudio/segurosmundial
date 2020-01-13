@@ -118,6 +118,7 @@ a, button {
 
 
 // Admin
+// General admin
 
 .admin_wrapper {
     display: grid;
@@ -174,15 +175,25 @@ a, button {
     grid-row: 2/3;
     background: $blue;
     padding-top: 50px;
-
-    & > ul > li {
+    
+    .navbar {
+        padding: 0;
+        z-index: 100;
         
-        a {
-            position: relative;
-            padding: 10px 0;
-            padding-left: 20px;
+        ul {
+            width: 100%;
+        }
+        
+        .navbar-collapse > ul > li {
+            a {
+                position: relative;
+                padding: 10px 0;
+                padding-left: 20px;
+            }
         }
     }
+
+    
 
     a[aria-expanded='true']{
         background: $blue_light;
@@ -237,7 +248,7 @@ a, button {
     }
 }
 
-// General admin
+
 .modal_delete {
     text-align: center;
     padding: 20px 20px;
@@ -266,7 +277,10 @@ a, button {
     color: $blue;
 }
 
-#modal_detail_case {
+.modal_table {
+    .table {
+        box-shadow: none;
+    }
     .modal-dialog {
         max-width: 100%;
         width: 80%;
@@ -280,6 +294,37 @@ a, button {
         .modal-content {
             background: none;
             border: none;
+        }
+    }
+}
+
+.pagination {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    
+    ul {
+        position: relative;
+        margin: auto;
+        
+        li {
+            a {
+                color: $blue;
+                text-decoration: none;
+                padding: 5px;
+                text-align: center;
+                width: 30px;
+                height: 30px;
+                display: block;
+                line-height: 18px;
+                z-index: 12;
+                border-radius: 100%;
+                
+                &:hover, &.active {
+                    background: $blue;
+                    color: #fff;
+                }
+            }
         }
     }
 }
@@ -425,6 +470,7 @@ a, button {
     position: relative;
     width: 95%;
     margin: auto;
+    padding-bottom: 50px;
     padding-top: 50px;
     grid-column: 2/3;
     grid-row: 2/3;
