@@ -1120,7 +1120,18 @@ footer ul li .link:hover {
   background-position: -300px center;
 }
 
-.error_msg.wrapper_inner .panel {
+.error_msg.wrapper_inner .content .main_content .panel {
   max-width: 400px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.error_msg.wrapper_inner .content .main_content .panel h2 {
+  -ms-grid-columns: auto !important;
+      grid-template-columns: auto !important;
+}
+
+.error_msg.wrapper_inner .content .main_content .panel p {
+  color: #143345;
 }
 /*# sourceMappingURL=style.css.map */
