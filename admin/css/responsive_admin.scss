@@ -1,5 +1,17 @@
-@media all and (max-width:960px){
-
+@media all and (max-width:991px){
+    .sidebar {
+        padding: 10px 0;
+    }
+    
+    .navbar-toggler {
+        &:focus {
+            outline: 0;
+        }
+        i {
+            color: #fff;
+        }
+    }
+    
     .admin_wrapper {
         grid-template-rows: 125px auto auto;
     }

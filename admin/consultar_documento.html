@@ -104,7 +104,7 @@
         <div class="content">
             <div class="consultar_caso">
                 <div class="container-fluid">
-                    <h2><i class="fas fa-search"></i> Consultar caso</h2>
+                    <h2><i class="fas fa-search"></i> Consultar documentos</h2>
 
                     <div class="filters">
                         <h3><i class="fas fa-filter"></i> Filtros</h3>
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
-                                        <label for="">No. de solicitud Aurapotal</label>
+                                        <label for="">No. de solicitud Auraportal</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
@@ -200,8 +200,8 @@
                         <table class="table">
                             <thead class="thead-dark">
                               <tr>
-                                <th colspan="10" scope="col">
-                                    <h4>Casos</h4>
+                                <th colspan="11" scope="col">
+                                    <h4>Documentos</h4>
                                 </th>
                               </tr>
                             </thead>
@@ -209,12 +209,13 @@
                                 <tr>
                                   <th scope="col">No. Caso</th>
                                   <th scope="col">No. Radicado</th>
-                                  <th scope="col">Estado de la solicitud</th>
+                                  <th scope="col">Estado del documento</th>
+                                  <th scope="col">Tipo de <br>Solicitud</th>
                                   <th scope="col">No. de firmantes</th>
-                                  <th scope="col">Tipo de documento</th>
-                                  <th scope="col">Fecha de firmado </th>
+                                  <th scope="col">No. de firmas</th>
                                   <th scope="col">Identificación Tomador </th>
-                                  <th scope="col">Nombre Tomador </th>
+                                  <th scope="col">Nombre <br> Tomador </th>
+                                  <th scope="col">Fecha de creación <br> de solicitud </th>
                                   <th scope="col">Analista</th>
                                   <th scope="col">Acciones</th>
                                 </tr>
@@ -224,68 +225,69 @@
                                
                                 <td><a class="case_link" href="#" data-toggle="modal" data-target="#modal_detail_case">00001 <i class="fas fa-search-plus"></i></a></td>
                                 <td>10034</td>
-                                <td><div class="tag success">Exitosa</div></td>
+                                <td><div class="tag success">Terminado</div></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato Arrendamiento</a></td>
                                 <td>3</td>
-                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
-                                <td>Nov 02/19</td>
+                                <td>3</td>
                                 <td>1128234789</td>
                                 <td>Danny Guarín Ocampo</td>
+                                <td>Nov 02/19</td>
                                 <td nowrap>Analista 1</td>
                                 <td>
                                     <div class="actions">
-                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
-                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_doc"><i class="fas fa-search-plus"></i></a>
                                     </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td><a class="case_link" href="">00002 <i class="fas fa-search-plus"></i></a></td>
                                 <td>10034</td>
-                                <td><div class="tag process">En proceso</div></td>
+                                <td><div class="tag process">Pendiente</div></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato Arrendamiento</a></td>
                                 <td>3</td>
-                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
-                                <td></td>
+                                <td>4</td>
                                 <td>1128234789</td>
                                 <td>Danny Guarín Ocampo</td>
+                                <td>Nov 02/19</td>
                                 <td>Analista 1</td>
                                 <td>
                                     <div class="actions">
-                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
-                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_doc"><i class="fas fa-search-plus"></i></a>
                                     </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td><a class="case_link" href="">00003 <i class="fas fa-search-plus"></i></a></td>
                                 <td>10034</td>
-                                <td><div class="tag success">Exitosa</div></td>
+                                <td><div class="tag success">Terminado</div></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato Arrendamiento</a></td>
                                 <td>3</td>
-                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
-                                <td>Nov 02/19</td>
+                                <td>3</td>
                                 <td>1128234789</td>
                                 <td>Danny Guarín Ocampo</td>
+                                <td>Nov 02/19</td>
                                 <td>Analista 1</td>
                                 <td>
                                     <div class="actions">
-                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
-                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_doc"><i class="fas fa-search-plus"></i></a>
                                     </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td><a class="case_link" href="">00004 <i class="fas fa-search-plus"></i></a></td>
                                 <td>10034</td>
-                                <td><div class="tag fail">No exitosa</div></td>
-                                <td>3</td>
-                                <td><a href="pdf/contrato.pdf" target="_blank">Documento + Sarlaft</a></td>
-                                <td>Nov 02/19</td>
+                                <td><div class="tag success">Terminado</div></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato Arrendamiento</a></td>
+                                <td>4</td>
+                                <td>4</td>
                                 <td>1128234789</td>
+                                
                                 <td>Danny Guarín Ocampo</td>
+                                <td>Nov 02/19</td>
                                 <td>Analista 1</td>
                                 <td>
                                     <div class="actions">
-                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_case"><i class="fas fa-search-plus"></i></a>
-                                        <a class="delete_icon" href="" data-toggle="modal" data-target="#modal_delete_case" data-backdrop="static"><i class="fas fa-times"></i></a>
+                                        <a class="more_icon" href="" data-toggle="modal" data-target="#modal_detail_doc"><i class="fas fa-search-plus"></i></a>
                                     </div>
                                 </td>
                               </tr>
@@ -310,6 +312,82 @@
 
 
 
+<!-- Modal Detalle del Documento -->
+<div class="modal fade modal_table" id="modal_detail_doc" tabindex="-1" role="dialog" aria-labelledby="modal_detail_doc"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal_detail_case">
+                    <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th colspan="11" scope="col">
+                                    <h4>Detalle de los documentos del caso No. 00001</h4>
+                                    <a href="" class="close_modal" data-dismiss="modal"><i class="fas fa-times"></i></a>
+                                </th>
+                              </tr>
+                            </thead>
+                            <thead class="thead-light">
+                                <tr>
+                                  <th scope="col">No. Caso</th>
+                                  <th scope="col">No. Radicado</th>
+                                  <th scope="col">Estado del documento</th>
+                                  <th scope="col">Tipo de <br>Solicitud</th>
+                                  <th scope="col">No. de firmantes</th>
+                                  <th scope="col">No. de firmas</th>
+                                  <th scope="col">Identificación Tomador </th>
+                                  <th scope="col">Nombre <br> Tomador </th>
+                                  <th scope="col">Fecha de creación <br> de solicitud </th>
+                                  <th scope="col">Analista</th>
+                                  <th scope="col">Acciones</th>
+                                </tr>
+                              </thead>
+                            <tbody>
+                              <tr>
+                               
+                                <td><a class="case_link" href="#" data-toggle="modal" data-target="#modal_detail_case">00001 <i class="fas fa-search-plus"></i></a></td>
+                                <td>10034</td>
+                                <td><div class="tag success">Terminado</div></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Contrato Arrendamiento</a></td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>1128234789</td>
+                                <td>Danny Guarín Ocampo</td>
+                                <td>Nov 02/19</td>
+                                <td nowrap>Analista 1</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="pdf/contrato.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><a class="case_link" href="">00001 <i class="fas fa-search-plus"></i></a></td>
+                                <td>10035</td>
+                                <td><div class="tag process">Pendiente</div></td>
+                                <td><a href="pdf/contrato.pdf" target="_blank">Sarlaft Persona Natural</a></td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1123474789</td>
+                                <td>Cristhian Sandoval</td>
+                                <td>Nov 05/19</td>
+                                <td>Analista 1</td>
+                                <td>
+                                    <div class="actions">
+                                        <a href="pdf/contrato.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                                    </div>
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
 <!-- Modal Detalle del Caso -->
 <div class="modal fade modal_table" id="modal_detail_case" tabindex="-1" role="dialog" aria-labelledby="modal_detail_case"
     aria-hidden="true">
