@@ -116,10 +116,12 @@ $yellow: #F2E74B;
     }
     .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link {
         justify-self: center;
+        grid-column: 1/-1;
     }
 
     .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
         margin: 20px 0;
+        grid-column: 1/-1;
     }
 
     .panel .g-recaptcha {

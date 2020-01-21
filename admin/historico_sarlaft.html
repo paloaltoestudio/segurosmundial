@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Seguros Mundial | Firma Electrónica</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="css/style_admin.css">
+    <link rel="stylesheet" href="css/responsive_admin.css">
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="top_line"></div>
+
+    <div class="admin_wrapper">
+        <div class="admin_top">
+            <div class="logo">
+                <img src="images/logo-seguros-mundial.png" alt="">
+            </div>
+
+            <h1>Portal de firma electrónica</h1>
+
+            <div class="admin_right">
+                <div class="admin_right_info">
+                    <a href="">Cerrar Sesión</a>
+                    <a href=""><img src="images/user_icon.svg" alt="">ARODRIGUEZ</a>
+                </div>
+                <img src="images/admin_top_img.png" alt="">
+            </div>
+        </div>
+
+        <div class="sidebar">
+           <nav class="navbar navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+                       
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-unstyled">
+                <li><a class="" href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li>
+                    <a href="#casos_submenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle"><i class="fas fa-search"></i> Consultas</a>
+                    <ul class="collapse list-unstyled" id="casos_submenu">
+                        <li>
+                            <a href="consultar_caso.html"><i class="fas fa-folder"></i> Casos</a>
+                        </li>
+                        <li>
+                            <a href="consultar_documento.html"><i class="fas fa-file-alt"></i> Documentos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="" href="crear_caso.html"><i class="fas fa-plus"></i> Crear Caso</a></li>
+                <li><a href="#report_submenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"><i class="fas fa-chart-pie"></i> Reportes</a>
+                    <ul class="collapse show list-unstyled" id="report_submenu">
+                        <li>
+                            <a href="historico_casos.html">Histórico casos</a>
+                        </li>
+                        <li>
+                            <a href="historico_documentos.html">Histórico documentos</a>
+                        </li>
+                        <li>
+                            <a href="historico_sarlaft.html">Histórico Sarlaft</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#admin_submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="fas fa-cog"></i> Administración</a>
+                    <ul class="collapse list-unstyled" id="admin_submenu">
+                        <li>
+                            <a href="#"><i class="fas fa-cog"></i> Generales</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-server"></i> Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-user"></i> Usuarios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+            </ul>
+               </div>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="container-fluid">
+                <h2><i class="fas fa-chart-pie"></i> Histórico Sarlaft</h2>
+                
+                <section class="dashboard">
+                    
+                    Histórico Sarlaft
+                    
+                </section>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.js" type="text/javascript"></script>
+
+    <script src="js/scripts_admin.js"></script>
+</body>
+
+</html>

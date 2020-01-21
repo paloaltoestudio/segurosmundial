@@ -1,375 +1,274 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap");
+/* line 10, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 body {
-  font-family: 'Ubuntu', sans-serif;
-}
+  font-family: 'Ubuntu', sans-serif; }
 
+/* line 14, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .wrapper {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
-  background: #143345;
-}
-
-.wrapper.wrapper_inner {
-  min-height: 100vh;
-  background: none;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-}
-
-.wrapper.wrapper_inner .content {
-  position: relative;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-column-align: end;
+  grid-template-columns: 1fr auto;
+  background: #143345; }
+  /* line 19, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .wrapper.wrapper_inner {
+    min-height: 100vh;
+    background: none;
+    background-size: cover !important;
+    background-attachment: fixed !important; }
+    /* line 26, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .wrapper.wrapper_inner .content {
+      position: relative;
+      grid-column: 2/3;
       justify-self: end;
-  padding-right: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-}
+      padding-right: 50px;
+      display: grid;
+      grid-template-rows: auto auto auto; }
+      /* line 34, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .wrapper.wrapper_inner .content:before {
+        content: '';
+        position: absolute;
+        width: 600px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: #143345 url("../images/dots.png") no-repeat;
+        clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%); }
+      /* line 45, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .wrapper.wrapper_inner .content .title {
+        position: relative;
+        width: 500px;
+        margin-top: 20px;
+        justify-self: end;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        z-index: 1000; }
+        /* line 54, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .wrapper.wrapper_inner .content .title h1 {
+          font-weight: bold;
+          font-size: 30px; }
+      /* line 60, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .wrapper.wrapper_inner .content .main_content {
+        position: relative;
+        z-index: 10;
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px; }
+        /* line 68, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .wrapper.wrapper_inner .content .main_content .title {
+          position: relative;
+          width: 500px;
+          justify-self: end;
+          grid-row: 1/2;
+          grid-column: 1/2;
+          z-index: 1000; }
+          /* line 76, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .title h1 {
+            font-weight: bold;
+            font-size: 30px; }
+        /* line 82, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .wrapper.wrapper_inner .content .main_content .panel {
+          position: relative;
+          padding: 30px;
+          min-width: 600px;
+          grid-row: 3/4; }
+          /* line 89, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel.success img {
+            margin-bottom: 20px; }
+          /* line 92, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel.success h2 {
+            grid-template-columns: auto; }
+          /* line 97, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel .panel_title {
+            display: flex;
+            justify-content: center;
+            align-content: center; }
+          /* line 103, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel h2 {
+            text-transform: none;
+            font-size: 20px;
+            line-height: 1.3em;
+            border: none;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center; }
+            /* line 112, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .wrapper.wrapper_inner .content .main_content .panel h2 img {
+              width: 60px;
+              margin-right: 10px;
+              display: inline-block;
+              grid-row: 1/2;
+              grid-column: 1/2; }
+            /* line 121, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .wrapper.wrapper_inner .content .main_content .panel h2 span {
+              display: inline-block;
+              grid-row: 1/2;
+              grid-column: 2/3; }
+          /* line 129, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel h3 {
+            color: #0799D5;
+            font-size: 22px;
+            margin-bottom: 20px; }
+          /* line 135, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel p {
+            color: #0799D5;
+            font-size: 16px; }
+          /* line 140, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel .link {
+            text-transform: none;
+            margin-top: 20px; }
+          /* line 147, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel form .form-control {
+            border: none;
+            border-bottom: 2px solid #0799D5;
+            border-radius: 0 !important; }
+            /* line 152, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .wrapper.wrapper_inner .content .main_content .panel form .form-control:focus {
+              box-shadow: none; }
+          /* line 157, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel form label {
+            text-align: left;
+            display: block;
+            color: #0799D5;
+            margin-bottom: 7px;
+            padding-top: 7px; }
+          /* line 165, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel form select.form-control {
+            border: none;
+            color: #0799D5; }
+          /* line 170, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel form button, .wrapper.wrapper_inner .content .main_content .panel form .link {
+            text-transform: none;
+            margin-top: 20px; }
+            /* line 174, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .wrapper.wrapper_inner .content .main_content .panel form button i, .wrapper.wrapper_inner .content .main_content .panel form .link i {
+              margin-left: 20px; }
+          /* line 180, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .wrapper.wrapper_inner .content .main_content .panel form .link.inactive {
+            background: #AAAAAA;
+            border-color: #AAAAAA; }
+            /* line 184, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .wrapper.wrapper_inner .content .main_content .panel form .link.inactive:hover {
+              color: #fff; }
+      /* line 193, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .wrapper.wrapper_inner .content footer {
+        width: 500px;
+        justify-self: end; }
+  /* line 200, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .wrapper .section_img {
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+    height: 100vh;
+    grid-column: 1/2;
+    -ms-grid-column: 1/2;
+    grid-row: 1/2;
+    -ms-grid-row: 1/2; }
 
-.wrapper.wrapper_inner .content:before {
-  content: '';
-  position: absolute;
-  width: 600px;
-  height: 100%;
-  right: 0;
-  top: 0;
-  background: #143345 url("../images/dots.png") no-repeat;
-  -webkit-clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.wrapper.wrapper_inner .content .title {
-  position: relative;
-  width: 500px;
-  margin-top: 20px;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  z-index: 1000;
-}
-
-.wrapper.wrapper_inner .content .title h1 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.wrapper.wrapper_inner .content .main_content {
-  position: relative;
-  z-index: 10;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  margin-top: 20px;
-}
-
-.wrapper.wrapper_inner .content .main_content .title {
-  position: relative;
-  width: 500px;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  z-index: 1000;
-}
-
-.wrapper.wrapper_inner .content .main_content .title h1 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel {
-  position: relative;
-  padding: 30px;
-  min-width: 600px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel .panel_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel h2 {
-  text-transform: none;
-  font-size: 20px;
-  line-height: 1.3em;
-  border: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel h2 img {
-  width: 60px;
-  margin-right: 10px;
-  display: inline-block;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel h2 span {
-  display: inline-block;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel h3 {
-  color: #0799D5;
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel p {
-  color: #0799D5;
-  font-size: 16px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel .link {
-  text-transform: none;
-  margin-top: 20px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form .form-control {
-  border: none;
-  border-bottom: 2px solid #0799D5;
-  border-radius: 0 !important;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form .form-control:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form label {
-  text-align: left;
-  display: block;
-  color: #0799D5;
-  margin-bottom: 7px;
-  padding-top: 7px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form select.form-control {
-  border: none;
-  color: #0799D5;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form button, .wrapper.wrapper_inner .content .main_content .panel form .link {
-  text-transform: none;
-  margin-top: 20px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form button i, .wrapper.wrapper_inner .content .main_content .panel form .link i {
-  margin-left: 20px;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form .link.inactive {
-  background: #AAAAAA;
-  border-color: #AAAAAA;
-}
-
-.wrapper.wrapper_inner .content .main_content .panel form .link.inactive:hover {
-  color: #fff;
-}
-
-.wrapper.wrapper_inner .content footer {
-  width: 500px;
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-.wrapper .section_img {
-  background-repeat: no-repeat;
-  -webkit-clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
-  height: 100vh;
-  grid-column: 1/2;
-  -ms-grid-column: 1/2;
-  grid-row: 1/2;
-  -ms-grid-row: 1/2;
-}
-
+/* line 211, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .steps {
   width: 500px;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  display: -ms-grid;
+  justify-self: end;
   display: grid;
-  -ms-grid-columns: 100px 100px 100px 100px 100px;
-      grid-template-columns: 100px 100px 100px 100px 100px;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
+  grid-template-columns: 100px 100px 100px 100px 100px;
   grid-row: 2/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.steps div:nth-child(1) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.steps div:nth-child(2) {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.steps div:nth-child(3) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-}
-
-.steps div:nth-child(4) {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4/5;
-}
-
-.steps div:nth-child(5) {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-column: 5/6;
-}
-
-.steps .step {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  font-size: 14px;
-}
-
-.steps .step.current {
-  position: relative;
-  color: #F2E74B;
-}
-
-.steps .step.current span {
-  position: relative;
-  background: #F2E74B;
-}
-
-.steps .step.done {
-  color: #0799D5;
-}
-
-.steps .step.done span {
-  position: relative;
-  background: #0799D5;
-  color: #fff;
-}
-
-.steps .step.done span:after {
-  content: '';
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  align-content: center; }
+  /* line 220, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps div:nth-child(1) {
+    grid-column: 1/2; }
+  /* line 223, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps div:nth-child(2) {
+    grid-column: 2/3; }
+  /* line 226, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps div:nth-child(3) {
+    grid-column: 3/4; }
+  /* line 229, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps div:nth-child(4) {
+    grid-column: 4/5; }
+  /* line 232, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps div:nth-child(5) {
+    grid-column: 5/6; }
+  /* line 236, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps .step {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 14px; }
+    /* line 242, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .steps .step.current {
+      position: relative;
+      color: #F2E74B; }
+      /* line 244, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .steps .step.current span {
+        position: relative;
+        background: #F2E74B; }
+    /* line 251, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .steps .step.done {
+      color: #0799D5; }
+      /* line 252, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .steps .step.done span {
+        position: relative;
+        background: #0799D5;
+        color: #fff; }
+        /* line 257, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .steps .step.done span:after {
+          content: '';
+          position: absolute;
+          width: 90%;
+          height: 90%;
+          top: 50%;
+          left: 50%;
           transform: translate(-50%, -50%);
-  border-radius: 100%;
-  border: 1px solid #fff;
-}
+          border-radius: 100%;
+          border: 1px solid #fff; }
+    /* line 272, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .steps .step span {
+      width: 40px;
+      height: 40px;
+      margin: auto;
+      margin-bottom: 10px;
+      display: block;
+      border-radius: 100%;
+      padding: 10px;
+      text-align: center;
+      background: #fff;
+      color: #143345;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 20px; }
+  /* line 289, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .steps .line {
+    position: relative;
+    top: 24px;
+    display: block;
+    width: 100%;
+    border-top: 2px solid #fff; }
+    /* line 296, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .steps .line.current {
+      border-color: #F2E74B; }
+    /* line 300, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .steps .line.done {
+      border-color: #0799D5; }
 
-.steps .step span {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  margin-bottom: 10px;
-  display: block;
-  border-radius: 100%;
-  padding: 10px;
-  text-align: center;
-  background: #fff;
-  color: #143345;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-}
-
-.steps .line {
-  position: relative;
-  top: 24px;
-  display: block;
-  width: 100%;
-  border-top: 2px solid #fff;
-}
-
-.steps .line.current {
-  border-color: #F2E74B;
-}
-
-.steps .line.done {
-  border-color: #0799D5;
-}
-
+/* line 306, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 a, button {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+  transition: all 0.2s ease-in-out; }
+  /* line 309, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  a:focus, button:focus {
+    outline: 0;
+    box-shadow: none !important; }
 
-a:focus, button:focus {
-  outline: 0;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
+/* line 315, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .logo {
   position: fixed;
   width: 220px;
   top: -10px;
   left: 50px;
-  z-index: 10;
-}
+  z-index: 10; }
+  /* line 322, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .logo img {
+    width: 220px; }
 
-.logo img {
-  width: 220px;
-}
-
+/* line 327, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .link {
   padding: 10px 20px;
   border-radius: 30px;
@@ -379,759 +278,654 @@ a:focus, button:focus {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  cursor: pointer;
-}
+  cursor: pointer; }
+  /* line 339, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .link:hover {
+    background: none;
+    color: #0799D5;
+    text-decoration: none; }
+  /* line 345, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .link.secondary {
+    background: #AAAAAA;
+    border-color: #AAAAAA; }
+    /* line 349, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .link.secondary:hover {
+      background: #0799D5;
+      color: #fff;
+      border-color: #0799D5; }
+  /* line 356, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .link.outline {
+    background: none;
+    border-color: #0799D5;
+    color: #0799D5;
+    display: inline-block; }
 
-.link:hover {
-  background: none;
-  color: #0799D5;
-  text-decoration: none;
-}
-
-.link.secondary {
-  background: #AAAAAA;
-  border-color: #AAAAAA;
-}
-
-.link.secondary:hover {
-  background: #0799D5;
-  color: #fff;
-  border-color: #0799D5;
-}
-
-.link.outline {
-  background: none;
-  border-color: #0799D5;
-  color: #0799D5;
-  display: inline-block;
-}
-
+/* line 364, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .content {
   position: relative;
-  display: -ms-grid;
   display: grid;
   background: url("../images/dots.png") no-repeat;
   background-position: center center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
+  grid-column: 2/3; }
 
+/* line 374, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 h1 {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
+  /* line 379, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  h1 strong {
+    color: #F2E74B;
+    display: block; }
 
-h1 strong {
-  color: #F2E74B;
-  display: block;
-}
-
+/* line 386, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .field_icon {
   display: inline-block;
-  width: auto;
-}
+  width: auto; }
 
+/* line 391, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .panel {
   background: #fff;
   border-radius: 8px;
   padding: 20px 40px;
-  margin: auto;
-}
+  margin: auto; }
+  /* line 397, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .panel h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0799D5;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0799D5; }
+  /* line 406, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .panel .g-recaptcha {
+    display: inline-block; }
+  /* line 410, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .panel .link {
+    width: 80%;
+    text-transform: uppercase; }
 
-.panel h2 {
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: bold;
-  color: #0799D5;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0799D5;
-}
-
-.panel .g-recaptcha {
-  display: inline-block;
-}
-
-.panel .link {
-  width: 80%;
-  text-transform: uppercase;
-}
-
+/* line 416, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 footer {
   position: relative;
   text-align: center;
   z-index: 100;
   margin-bottom: 40px;
   margin-top: 40px;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
-}
+  grid-row: 4/5; }
+  /* line 425, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  footer ul {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    border-top: 1px solid #fff; }
+    /* line 431, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    footer ul li {
+      margin: 0 30px; }
+      /* line 434, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      footer ul li a {
+        color: #fff; }
+        /* line 437, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        footer ul li a:hover {
+          color: #fff; }
+      /* line 442, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      footer ul li .link {
+        background: none;
+        border-color: #F2E74B;
+        color: #F2E74B; }
+        /* line 447, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        footer ul li .link:hover {
+          color: #143345;
+          background: #F2E74B; }
 
-footer ul {
-  width: 100%;
-  margin: auto;
-  padding-top: 20px;
-  border-top: 1px solid #fff;
-}
-
-footer ul li {
-  margin: 0 30px;
-}
-
-footer ul li a {
-  color: #fff;
-}
-
-footer ul li a:hover {
-  color: #fff;
-}
-
-footer ul li .link {
-  background: none;
-  border-color: #F2E74B;
-  color: #F2E74B;
-}
-
-footer ul li .link:hover {
-  color: #143345;
-  background: #F2E74B;
-}
-
+/* line 456, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .error {
   opacity: 0;
   margin-top: -30px;
   color: red;
   margin-bottom: 20px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
+  transition: all 0.2s ease; }
+  /* line 463, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .error.show {
+    opacity: 1;
+    margin-top: 0; }
 
-.error.show {
-  opacity: 1;
-  margin-top: 0;
-}
-
+/* line 469, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .tooltip-inner {
   position: relative;
   background-color: #0799D5;
-  left: 20px;
-}
+  left: 20px; }
 
+/* line 474, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .tooltip.bs-tooltip-right .arrow:before {
   border-right-color: #0799D5 !important;
-  left: 20px;
-}
+  left: 20px; }
 
+/* line 485, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .terms {
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
+  grid-template-columns: 1fr 1fr; }
+  /* line 487, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .terms .content {
+    grid-column: 1/2;
+    justify-self: center; }
+    /* line 491, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .terms .content .title {
+      margin-top: 80px !important; }
+      /* line 494, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .terms .content .title h1 {
+        font-size: 30px; }
+  /* line 500, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .terms .section_img {
+    background: url("../images/ingreso_img.jpg") center right;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+    grid-column: 2/3; }
+  /* line 506, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .terms .panel {
+    width: 100%;
+    max-width: 500px; }
+    /* line 511, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .terms .panel form .form-check {
+      text-align: left; }
+      /* line 514, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .terms .panel form .form-check label, .terms .panel form .form-check a {
+        color: #143345;
+        font-size: 14px; }
+      /* line 519, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .terms .panel form .form-check a {
+        text-decoration: underline; }
+        /* line 522, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .terms .panel form .form-check a:hover {
+          text-decoration: none; }
 
-.terms .content {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.terms .content .title {
-  margin-top: 80px !important;
-}
-
-.terms .content .title h1 {
-  font-size: 30px;
-}
-
-.terms .section_img {
-  background: url("../images/ingreso_img.jpg") center right;
-  -webkit-clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.terms .panel {
-  width: 100%;
-  max-width: 500px;
-}
-
-.terms .panel form .form-check {
-  text-align: left;
-}
-
-.terms .panel form .form-check label, .terms .panel form .form-check a {
-  color: #143345;
-  font-size: 14px;
-}
-
-.terms .panel form .form-check a {
-  text-decoration: underline;
-}
-
-.terms .panel form .form-check a:hover {
-  text-decoration: none;
-}
-
+/* line 531, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .modal-backdrop {
-  background: #143345;
-}
+  background: #143345; }
 
+/* line 535, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .modal-backdrop.show {
-  opacity: 0.9;
-}
+  opacity: 0.9; }
 
+/* line 539, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .modal_sm {
   padding: 20px;
-  text-align: center;
-}
+  text-align: center; }
+  /* line 542, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .modal_sm img {
+    width: 80px;
+    margin-bottom: 20px; }
+  /* line 546, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .modal_sm h3 {
+    font-size: 20px;
+    color: #0799D5;
+    margin-bottom: 20px;
+    text-align: center; }
+  /* line 553, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .modal_sm textarea {
+    resize: none;
+    margin-bottom: 20px;
+    padding: 10px; }
+  /* line 559, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .modal_sm .link {
+    padding: 5px 20px; }
+  /* line 563, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .modal_sm .btn_group {
+    display: grid;
+    grid-template-columns: auto 10px auto; }
+    /* line 567, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .modal_sm .btn_group .link {
+      text-align: center;
+      grid-column: 3/4; }
+      /* line 571, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .modal_sm .btn_group .link.secondary {
+        grid-column: 1/2; }
 
-.modal_sm img {
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-.modal_sm h3 {
-  font-size: 20px;
-  color: #0799D5;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.modal_sm textarea {
-  resize: none;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.modal_sm .link {
-  padding: 5px 20px;
-}
-
-.modal_sm .btn_group {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 10px auto;
-      grid-template-columns: auto 10px auto;
-}
-
-.modal_sm .btn_group .link {
-  text-align: center;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-}
-
-.modal_sm .btn_group .link.secondary {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
+/* line 579, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 #no_valida p {
-  color: #0799D5;
-}
+  color: #0799D5; }
 
+/* line 588, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .paso_1.wrapper_inner {
-  background: url("../images/paso-1.jpg") -500px center;
-}
+  background: url("../images/paso-1.jpg") -500px center; }
+  /* line 591, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .paso_1.wrapper_inner .panel {
+    max-width: 400px; }
 
-.paso_1.wrapper_inner .panel {
-  max-width: 400px;
-}
-
+/* line 599, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .paso_1.paso_1_documento {
-  background-size: cover;
-}
+  background-size: cover; }
+  /* line 601, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .paso_1.paso_1_documento .panel {
+    max-width: none;
+    width: 1000px; }
+    /* line 605, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_1.paso_1_documento .panel span.id_number {
+      color: #0799D5;
+      margin-bottom: 20px;
+      display: block; }
+    /* line 611, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_1.paso_1_documento .panel object {
+      height: 500px;
+      margin-bottom: 20px;
+      margin-top: 10px; }
+    /* line 617, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_1.paso_1_documento .panel .links {
+      margin-top: 40px; }
+      /* line 619, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .paso_1.paso_1_documento .panel .links .link {
+        display: inline;
+        width: auto;
+        margin: 0 10px;
+        padding: 10px 60px; }
 
-.paso_1.paso_1_documento .panel {
-  max-width: none;
-  width: 1000px;
-}
-
-.paso_1.paso_1_documento .panel span.id_number {
-  color: #0799D5;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.paso_1.paso_1_documento .panel object {
-  height: 500px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-
-.paso_1.paso_1_documento .panel .links {
-  margin-top: 40px;
-}
-
-.paso_1.paso_1_documento .panel .links .link {
-  display: inline;
-  width: auto;
-  margin: 0 10px;
-  padding: 10px 60px;
-}
-
+/* line 632, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .paso_2.wrapper_inner {
-  background: url("../images/paso-2.jpg") center right;
-}
+  background: url("../images/paso-2.jpg") center right; }
+  /* line 635, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .paso_2.wrapper_inner .panel {
+    width: 650px; }
+    /* line 639, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_2.wrapper_inner .panel form .links {
+      display: flex;
+      justify-content: flex-end; }
+    /* line 643, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_2.wrapper_inner .panel form .link {
+      width: auto;
+      display: inline; }
+    /* line 648, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_2.wrapper_inner .panel form .gj-icon {
+      color: #0799D5; }
 
-.paso_2.wrapper_inner .panel {
-  width: 650px;
-}
-
-.paso_2.wrapper_inner .panel form .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.paso_2.wrapper_inner .panel form .link {
-  width: auto;
-  display: inline;
-}
-
-.paso_2.wrapper_inner .panel form .gj-icon {
-  color: #0799D5;
-}
-
+/* line 657, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .paso_2.codigo.wrapper_inner {
   background: url("../images/paso-2-codigo.png");
-  background-position: -500px;
-}
+  background-position: -500px; }
 
+/* line 662, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 #code {
   text-align: center;
   width: 400px;
-  margin: auto;
-}
+  margin: auto; }
+  /* line 668, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code .remaining_time .title_timer {
+    color: #0799D5;
+    display: block; }
+  /* line 673, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code .remaining_time #timer {
+    font-size: 35px; }
+  /* line 677, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code .remaining_time .bar {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+    margin-bottom: 10px; }
+    /* line 684, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    #code .remaining_time .bar .bar_line {
+      width: 100%;
+      height: 15px;
+      background: #F2E74B;
+      transition: all 0.2s ease-in-out; }
+  /* line 693, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code .form-group {
+    width: 400px;
+    margin: auto; }
+  /* line 698, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code label {
+    text-align: center;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px; }
+  /* line 704, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code input {
+    margin: 0 5px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 30px;
+    outline: none;
+    width: 20%;
+    transition: all .2s ease-in-out;
+    border: none;
+    border-bottom: 2px solid #0799D5; }
+    /* line 715, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    #code input:focus {
+      border-color: #F2E74B; }
+    /* line 719, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    #code input::selection {
+      background: transparent; }
+  /* line 724, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code .links {
+    justify-content: center;
+    margin-bottom: 20px; }
+    /* line 727, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    #code .links .link {
+      width: 100%; }
+  /* line 732, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  #code .outline {
+    width: auto; }
+    /* line 734, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    #code .outline:hover {
+      background: #0799D5;
+      color: #fff; }
 
-#code .remaining_time .title_timer {
-  color: #0799D5;
-  display: block;
-}
-
-#code .remaining_time #timer {
-  font-size: 35px;
-}
-
-#code .remaining_time .bar {
-  position: relative;
-  width: 100%;
-  height: 15px;
-  background: #ccc;
-  margin-bottom: 10px;
-}
-
-#code .remaining_time .bar .bar_line {
-  width: 100%;
-  height: 15px;
-  background: #F2E74B;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-#code .form-group {
-  width: 400px;
-  margin: auto;
-}
-
-#code label {
-  text-align: center;
-  color: #000;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-#code input {
-  margin: 0 5px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 30px;
-  outline: none;
-  width: 20%;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  border: none;
-  border-bottom: 2px solid #0799D5;
-}
-
-#code input:focus {
-  border-color: #F2E74B;
-}
-
-#code input::-moz-selection {
-  background: transparent;
-}
-
-#code input::selection {
-  background: transparent;
-}
-
-#code .links {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
-}
-
-#code .links .link {
-  width: 100%;
-}
-
-#code .outline {
-  width: auto;
-}
-
-#code .outline:hover {
-  background: #0799D5;
-  color: #fff;
-}
-
+/* line 741, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .progressbar {
   width: 100%;
   margin: 0px auto;
-  background: #ccc;
-}
+  background: #ccc; }
 
+/* line 746, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .progressbar .inner {
   height: 15px;
-  -webkit-animation: progressbar-countdown;
-          animation: progressbar-countdown;
+  animation: progressbar-countdown;
   /* Placeholder, this will be updated using javascript */
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  animation-duration: 10s;
   /* We stop in the end */
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   /* Stay on pause when the animation is finished finished */
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   /* We start paused, we start the animation using javascript */
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   /* We want a linear animation, ease-out is standard */
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes progressbar-countdown {
-  0% {
-    width: 100%;
-    background: #F2E74B;
-  }
-  100% {
-    width: 0%;
-    background: #F00;
-  }
-}
+  animation-timing-function: linear; }
 
 @keyframes progressbar-countdown {
   0% {
     width: 100%;
-    background: #F2E74B;
-  }
+    background: #F2E74B; }
   100% {
     width: 0%;
-    background: #F00;
-  }
-}
+    background: #F00; } }
 
+/* line 773, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .preguntas.wrapper.wrapper_inner {
   background: url("../images/paso-2-codigo.png");
-  background-position: -500px;
-}
+  background-position: -500px; }
 
+/* line 778, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .preguntas .panel .links {
-  display: block;
-}
+  display: block; }
 
+/* line 782, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .preguntas .panel .question {
   position: absolute;
   opacity: 0;
   visibility: hidden;
   top: 80px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
+  transition: all 0.2s ease-in-out; }
+  /* line 789, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel .question.current_q {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    visibility: visible; }
+  /* line 796, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel .question .remove_q {
+    position: relative;
+    top: 0;
+    opacity: 0;
+    visibility: hidden; }
 
-.preguntas .panel .question.current_q {
-  position: relative;
-  opacity: 1;
-  top: 0;
-  visibility: visible;
-}
-
-.preguntas .panel .question .remove_q {
-  position: relative;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
+/* line 805, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .preguntas .panel .question_counter {
   background: #0799D5;
   padding: 10px 20px;
   color: #fff;
   display: inline-block;
   margin-bottom: 10px;
-  border-radius: 30px;
-}
+  border-radius: 30px; }
 
+/* line 815, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .preguntas .panel form .radio_question {
   background: #E6E6E6;
   border-radius: 20px;
   padding: 10px 20px;
   color: #4F4F4F !important;
-  display: -ms-grid !important;
   display: grid !important;
   grid-template-columns: auto auto;
   -ms-grid-columns: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-}
+  align-items: center;
+  cursor: pointer; }
+  /* line 826, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel form .radio_question:hover, .preguntas .panel form .radio_question.active {
+    background: #0799D5;
+    color: #fff !important; }
+    /* line 830, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .preguntas .panel form .radio_question:hover .checkmark, .preguntas .panel form .radio_question.active .checkmark {
+      background: #fff; }
+      /* line 833, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .preguntas .panel form .radio_question:hover .checkmark:after, .preguntas .panel form .radio_question.active .checkmark:after {
+        opacity: 1; }
+  /* line 839, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel form .radio_question input:checked ~ .checkmark {
+    background: #fff; }
+    /* line 842, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .preguntas .panel form .radio_question input:checked ~ .checkmark:after {
+      opacity: 1; }
+  /* line 847, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel form .radio_question span {
+    grid-row: 1/2; }
+  /* line 851, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel form .radio_question .input {
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: end; }
+  /* line 858, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .preguntas .panel form .radio_question .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: #C8C8C8;
+    border-radius: 100%; }
+    /* line 867, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .preguntas .panel form .radio_question .checkmark:after {
+      content: '\f061';
+      position: absolute;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #0799D5;
+      margin-left: 5px;
+      opacity: 0; }
 
-.preguntas .panel form .radio_question:hover, .preguntas .panel form .radio_question.active {
-  background: #0799D5;
-  color: #fff !important;
-}
-
-.preguntas .panel form .radio_question:hover .checkmark, .preguntas .panel form .radio_question.active .checkmark {
-  background: #fff;
-}
-
-.preguntas .panel form .radio_question:hover .checkmark:after, .preguntas .panel form .radio_question.active .checkmark:after {
-  opacity: 1;
-}
-
-.preguntas .panel form .radio_question input:checked ~ .checkmark {
-  background: #fff;
-}
-
-.preguntas .panel form .radio_question input:checked ~ .checkmark:after {
-  opacity: 1;
-}
-
-.preguntas .panel form .radio_question span {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.preguntas .panel form .radio_question .input {
+/* line 887, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+.conocimiento.wrapper_inner .content {
+  padding-right: 0;
   position: relative;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-.preguntas .panel form .radio_question .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background: #C8C8C8;
-  border-radius: 100%;
-}
-
-.preguntas .panel form .radio_question .checkmark:after {
-  content: '\f061';
-  position: absolute;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #0799D5;
-  margin-left: 5px;
-  opacity: 0;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel {
-  width: 800px !important;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel p {
-  color: #143345;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel form h2 {
-  background: #0799D5;
-  color: #fff;
-  text-align: left;
-  font-weight: normal;
-  font-size: 16px;
-  padding: 10px 20px;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel form p {
-  color: #143345;
-  text-align: left;
-  font-size: 14px;
-  padding: 0 20px;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel form .form-control {
-  border: 1px solid #ccc;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  margin-top: 20px;
-}
+  grid-column: 1/-1;
+  background: none; }
+  /* line 895, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .conocimiento.wrapper_inner .content .main_content .panel {
+    width: 90% !important; }
+    /* line 898, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel p {
+      color: #143345; }
+    /* line 903, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel table td {
+      font-size: 14px;
+      vertical-align: middle; }
+    /* line 910, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form h2 {
+      background: #0799D5;
+      color: #fff;
+      text-align: left;
+      font-weight: normal;
+      font-size: 16px;
+      padding: 10px 20px; }
+    /* line 919, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form p {
+      color: #6b6b6b;
+      text-align: left;
+      font-size: 14px;
+      padding: 0 20px; }
+    /* line 926, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form span {
+      font-size: 14px;
+      color: #143345; }
+    /* line 931, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form input, .conocimiento.wrapper_inner .content .main_content .panel form textarea, .conocimiento.wrapper_inner .content .main_content .panel form select.form-control {
+      font-size: 14px;
+      color: #6b6b6b; }
+    /* line 936, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form select.form-control {
+      border: 1px solid #ccc;
+      border-radius: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-position: right 50%;
+      background-repeat: no-repeat;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+      padding: .5em;
+      padding-right: 1.5em; }
+    /* line 948, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .datepicker {
+      padding-left: 10px;
+      color: #6b6b6b; }
+    /* line 952, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .gj-datepicker-md [role=right-icon] {
+      top: 7px;
+      right: 3px; }
+    /* line 958, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .form-check-inline label {
+      padding-top: 10px; }
+    /* line 963, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .form-group {
+      text-align: left; }
+      /* line 966, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .conocimiento.wrapper_inner .content .main_content .panel form .form-group p {
+        padding: 0; }
+    /* line 971, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .form-row.form-group {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 30px; }
+    /* line 976, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .form-control {
+      border: 1px solid #ccc;
+      font-size: 14px; }
+    /* line 981, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form label {
+      display: inline-block;
+      color: #143345;
+      padding-top: 2px;
+      font-size: 14px; }
+    /* line 988, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel form .firma_sarlaft {
+      border-bottom: 1px solid #ccc;
+      margin-top: 150px; }
+    /* line 994, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      margin-top: 20px; }
+      /* line 1001, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link {
+        width: 100%;
+        justify-self: end;
+        margin-top: 0;
+        grid-column: 3/4; }
+        /* line 1007, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link.secondary {
+          justify-self: start;
+          grid-column: 1/2; }
+      /* line 1013, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
+        align-items: center;
+        justify-content: center;
+        grid-column: 2/3; }
+        /* line 1018, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination .page-link {
+          width: 35px;
+          height: 35px;
+          border: none;
+          border-radius: 100%;
+          margin: 0 2px;
+          padding: 0;
+          line-height: 35px;
+          text-align: center;
+          color: #0799D5; }
+          /* line 1029, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination .page-link:hover, .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination .page-link.active {
+            background: #0799D5;
+            color: #fff; }
 
-.conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link {
-  width: 100%;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  margin-top: 0;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link.secondary {
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination .page-link {
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 100%;
-  margin: 0 2px;
-  line-height: 17px;
-  text-align: center;
-}
-
-.conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination .page-link:hover, .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination .page-link.active {
-  background: #0799D5;
-  color: #fff;
-}
-
+/* line 1045, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .paso_3.wrapper_inner {
   background: url("../images/paso-3.jpg") center right;
-  background-position: -320px center;
-}
+  background-position: -320px center; }
+  /* line 1051, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .paso_3.wrapper_inner .content .main_content .panel {
+    max-width: 400px; }
+    /* line 1054, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .paso_3.wrapper_inner .content .main_content .panel .resumen_firma {
+      text-align: left; }
+      /* line 1056, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .paso_3.wrapper_inner .content .main_content .panel .resumen_firma h3 {
+        font-size: 16px; }
+      /* line 1059, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+      .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link {
+        margin-bottom: 10px; }
+        /* line 1061, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link a {
+          color: #0799D5;
+          display: inline; }
+          /* line 1065, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link a i {
+            margin-left: 5px; }
+        /* line 1070, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .list_icon {
+          position: relative;
+          background: url("../images/firmas_listado.png") no-repeat;
+          margin-left: 5px;
+          display: inline-block;
+          width: 38px;
+          height: 36px;
+          top: 10px;
+          transition: none; }
+          /* line 1080, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .list_icon:hover {
+            background-position: -37px 0; }
+        /* line 1085, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+        .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla {
+          margin-top: 20px;
+          display: none; }
+          /* line 1088, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla h4 {
+            background: #4F4F4F;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px; }
+          /* line 1094, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+          .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table {
+            color: #0799D5;
+            font-size: 14px; }
+            /* line 1098, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table th {
+              font-size: 16px; }
+            /* line 1102, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+            .paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table .active {
+              background: #0799D5;
+              color: #fff; }
 
-.paso_3.wrapper_inner .content .main_content .panel {
-  max-width: 400px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma {
-  text-align: left;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma h3 {
-  font-size: 16px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link {
-  margin-bottom: 10px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link a {
-  color: #0799D5;
-  display: inline;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link a i {
-  margin-left: 5px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .list_icon {
-  position: relative;
-  background: url("../images/firmas_listado.png") no-repeat;
-  margin-left: 5px;
-  display: inline-block;
-  width: 38px;
-  height: 36px;
-  top: 10px;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .list_icon:hover {
-  background-position: -37px 0;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla {
-  margin-top: 20px;
-  display: none;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla h4 {
-  background: #4F4F4F;
-  color: #fff;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table {
-  color: #0799D5;
-  font-size: 14px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table th {
-  font-size: 16px;
-}
-
-.paso_3.wrapper_inner .content .main_content .panel .resumen_firma .document_link .firmantes_tabla table .active {
-  background: #0799D5;
-  color: #fff;
-}
-
+/* line 1120, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
 .error_msg.wrapper_inner {
   background: url("../images/error.jpg");
-  background-position: -300px center;
-}
+  background-position: -300px center; }
+  /* line 1126, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+  .error_msg.wrapper_inner .content .main_content .panel {
+    max-width: 400px;
+    text-align: center;
+    padding: 50px 20px; }
+    /* line 1131, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .error_msg.wrapper_inner .content .main_content .panel h2 {
+      grid-template-columns: auto !important; }
+    /* line 1135, /Applications/MAMP/htdocs/segurosmundial/css/style.scss */
+    .error_msg.wrapper_inner .content .main_content .panel p {
+      color: #143345; }
 
-.error_msg.wrapper_inner .content .main_content .panel {
-  max-width: 400px;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.error_msg.wrapper_inner .content .main_content .panel h2 {
-  -ms-grid-columns: auto !important;
-      grid-template-columns: auto !important;
-}
-
-.error_msg.wrapper_inner .content .main_content .panel p {
-  color: #143345;
-}
 /*# sourceMappingURL=style.css.map */

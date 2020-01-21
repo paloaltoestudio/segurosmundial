@@ -248,6 +248,12 @@ a, button {
     }
 }
 
+.modal {
+    .link {
+        padding: 10px 15px;
+    }
+}
+
 
 .modal_delete {
     text-align: center;
@@ -337,13 +343,17 @@ a, button {
 }
 
 .link {
-    padding: 10px 14px;
+    padding: 4px 14px;
     text-align: center;
+    height: auto;
     background: $blue_light;
     border: 1px solid $blue_light;
     color: #fff;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 
     &:hover {
         background: none;
@@ -469,7 +479,7 @@ a, button {
 .content {
     position: relative;
     width: 95%;
-    margin: auto;
+    margin: 0 auto;
     padding-bottom: 50px;
     padding-top: 50px;
     grid-column: 2/3;
@@ -504,6 +514,14 @@ a, button {
         label {
             font-size: 14px;
         }
+        
+        input.form-control, select {
+            font-size: 12px;
+        }
+        
+        .custom-file-label {
+            font-size: 12px;
+        }
 
         .form-control.datapicker {
             background: #fff;
@@ -513,12 +531,190 @@ a, button {
 
         .gj-datepicker {
             i {
-                top: 8px;
+                top: 6px;
                 right: 4px;
             }
         }
     }
-
-
-    
 }
+
+// Crear caso
+
+.create_case {
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: $blue;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .row {
+        margin-bottom: 15px;
+    }
+    
+    .group-field {
+        margin-bottom: 30px;
+    }
+    
+    .signer_detail_info {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition: all 0.2s ease;
+        
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+        }
+    }
+    
+    .centrales_info {
+        position: relative;
+        background: $blue_light;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        
+        a {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: #fff;
+            
+            &:hover {
+                color: $blue;
+            }
+        }
+        
+        p {
+            font-size: 14px;
+            margin-bottom: 5px;
+            
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .add_signer_bottom {
+        display: grid;
+        grid-template-columns: auto 200px;
+    }
+    
+    .table {
+        select {
+            font-size: 12px;
+        }
+        
+        td {
+            a {
+                text-decoration: underline;
+                display: block;
+                text-align: center;
+                
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+    .create_case_bottom_links {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+        column-gap: 10px;
+    }
+}
+
+// Ajustes
+
+.settings {
+    
+    h3 {
+        color: $blue;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    
+    .form-group {
+        margin-bottom: 30px;
+        
+        h4 {
+            font-size: 18px;
+            color: $blue;
+            margin-bottom: 10px;
+        }
+        
+        .link {
+            padding: 6px 12px;
+        }
+        
+        .small {
+            width: 50px;
+        }
+    }
+    
+    form {
+        h5 {
+            font-size: 18px;
+            color: $blue;
+            margin-bottom: 20px;
+        }
+        
+        input, select {
+            height: 40px;
+        }
+    }
+    
+    table {
+        a {
+            text-decoration: underline;
+            
+            &.delete {
+                text-decoration: none;
+                color: red;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

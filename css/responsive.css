@@ -90,21 +90,23 @@
     justify-self: center; }
   /* line 117, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
   .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .link {
-    justify-self: center; }
-  /* line 121, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
+    justify-self: center;
+    grid-column: 1/-1; }
+  /* line 122, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
   .conocimiento.wrapper_inner .content .main_content .panel .conocimiento_nav .pagination {
-    margin: 20px 0; }
-  /* line 125, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
+    margin: 20px 0;
+    grid-column: 1/-1; }
+  /* line 127, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
   .panel .g-recaptcha {
     transform: scale(0.7);
     margin-left: -65px; }
-  /* line 130, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
+  /* line 132, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
   .error {
     margin-top: -70px; }
-  /* line 134, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
+  /* line 136, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
   .modal_sm .btn_group {
     grid-template-columns: auto; }
-    /* line 137, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
+    /* line 139, /Applications/MAMP/htdocs/segurosmundial/css/responsive.scss */
     .modal_sm .btn_group .link {
       grid-column: 1/-1;
       margin-bottom: 20px; } }

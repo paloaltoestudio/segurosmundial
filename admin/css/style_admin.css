@@ -195,59 +195,63 @@ a, button {
       margin-right: 10px; }
 
 /* line 252, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.modal .link {
+  padding: 10px 15px; }
+
+/* line 258, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .modal_delete {
   text-align: center;
   padding: 20px 20px; }
-  /* line 256, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 262, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .modal_delete p {
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 18px; }
-  /* line 262, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 268, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .modal_delete a {
     margin: 0 10px; }
 
-/* line 267, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 273, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .modal_observation {
   padding: 20px;
   font-weight: lighter;
   text-align: justify; }
 
-/* line 273, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 279, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .close_modal {
   position: absolute;
   top: 10px;
   right: 10px;
   color: #143345; }
 
-/* line 281, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 287, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .modal_table .table {
   box-shadow: none; }
 
-/* line 284, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 290, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .modal_table .modal-dialog {
   max-width: 100%;
   width: 80%; }
-  /* line 288, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 294, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .modal_table .modal-dialog .close_modal {
     color: #fff;
     top: 20px;
     right: 20px; }
-  /* line 294, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 300, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .modal_table .modal-dialog .modal-content {
     background: none;
     border: none; }
 
-/* line 301, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 307, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .pagination {
   text-align: center;
   width: 100%;
   margin-bottom: 40px; }
-  /* line 306, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 312, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .pagination ul {
     position: relative;
     margin: auto; }
-    /* line 311, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 317, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .pagination ul li a {
       color: #143345;
       text-decoration: none;
@@ -259,166 +263,293 @@ a, button {
       line-height: 18px;
       z-index: 12;
       border-radius: 100%; }
-      /* line 323, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+      /* line 329, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
       .pagination ul li a:hover, .pagination ul li a.active {
         background: #143345;
         color: #fff; }
 
-/* line 333, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 339, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .send_signature.disabled {
   color: #CECECE !important;
   cursor: not-allowed; }
 
-/* line 339, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 345, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .link {
-  padding: 10px 14px;
+  padding: 4px 14px;
   text-align: center;
+  height: auto;
   background: #0799D5;
   border: 1px solid #0799D5;
   color: #fff;
   border-radius: 10px;
-  text-decoration: none; }
-  /* line 348, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease; }
+  /* line 358, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .link:hover {
     background: none;
     color: #0799D5;
     text-decoration: none; }
-  /* line 354, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 364, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .link.delete {
     background: #C21313;
     border-color: #C21313; }
-    /* line 358, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 368, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .link.delete:hover {
       background: none;
       color: #C21313; }
 
-/* line 365, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 375, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .table {
   position: relative;
   border: none;
   margin-bottom: 50px;
   box-shadow: 0 0 20px rgba(133, 133, 133, 0.2); }
-  /* line 371, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 381, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .table thead.thead-dark {
     border: none; }
-    /* line 374, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 384, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .table thead.thead-dark th {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border: none;
       background: #143345; }
-      /* line 380, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+      /* line 390, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
       .table thead.thead-dark th h4 {
         font-size: 18px;
         margin: 8px 0; }
-  /* line 388, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 398, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .table .thead-light th {
     border-right: 1px solid #fff;
     color: #143345;
     vertical-align: middle;
     font-size: 12px; }
-    /* line 395, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 405, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .table .thead-light th:last-of-type {
       border: none; }
-  /* line 403, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 413, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .table tbody tr {
     background: #fff;
     font-size: 12px; }
-    /* line 407, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 417, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .table tbody tr td {
       vertical-align: middle; }
-      /* line 409, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+      /* line 419, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
       .table tbody tr td a {
         color: #143345; }
-  /* line 415, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 425, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .table tbody tr:last-child td:first-child {
     border-bottom-left-radius: 10px; }
-  /* line 418, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 428, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 10px; }
 
-/* line 424, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 434, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .case_link {
   display: block;
   white-space: nowrap; }
-  /* line 428, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 438, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .case_link i {
     font-size: 14px; }
 
-/* line 433, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 443, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .actions {
   text-align: center; }
-  /* line 436, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 446, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .actions a {
     margin: 0 5px; }
-    /* line 438, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 448, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .actions a i {
       font-size: 16px; }
-  /* line 443, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 453, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .actions .more_icon {
     color: #143345; }
-  /* line 447, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 457, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .actions .delete_icon {
     color: #EE0000; }
 
-/* line 451, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 461, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .tag {
   background: #ccc;
   padding: 4px 10px;
   text-align: center;
   border-radius: 20px;
   color: #fff; }
-  /* line 458, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 468, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .tag.success {
     background: #60A803; }
-  /* line 461, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 471, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .tag.process {
     background: #E3810E; }
-  /* line 464, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 474, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .tag.fail {
     background: #C21313; }
 
-/* line 469, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+/* line 479, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
 .content {
   position: relative;
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 50px;
   padding-top: 50px;
   grid-column: 2/3;
   grid-row: 2/3; }
-  /* line 478, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 488, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .content h2 {
     font-size: 30px;
     font-weight: lighter;
     border-bottom: 1px solid #0799D5;
     padding-bottom: 10px;
     margin-bottom: 30px; }
-    /* line 484, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 494, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .content h2 i {
       font-size: 28px; }
-  /* line 490, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 500, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .content .filters h3 {
     font-size: 18px;
     margin-bottom: 20px; }
-    /* line 494, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 504, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .content .filters h3 i {
       font-size: 14px;
       margin-right: 5px; }
-  /* line 501, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  /* line 511, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
   .content form {
     margin-bottom: 40px; }
-    /* line 504, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 514, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .content form label {
       font-size: 14px; }
-    /* line 508, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 518, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    .content form input.form-control, .content form select {
+      font-size: 12px; }
+    /* line 522, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    .content form .custom-file-label {
+      font-size: 12px; }
+    /* line 526, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .content form .form-control.datapicker {
       background: #fff;
       padding: 10px;
       border: 1px solid #ced4da; }
-    /* line 515, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    /* line 533, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
     .content form .gj-datepicker i {
-      top: 8px;
+      top: 6px;
       right: 4px; }
+
+/* line 543, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.create_case {
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px; }
+  /* line 548, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #143345;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; }
+  /* line 556, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .row {
+    margin-bottom: 15px; }
+  /* line 560, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .group-field {
+    margin-bottom: 30px; }
+  /* line 564, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .signer_detail_info {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all 0.2s ease; }
+    /* line 570, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    .create_case .signer_detail_info.active {
+      visibility: visible;
+      opacity: 1;
+      height: auto; }
+  /* line 577, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .centrales_info {
+    position: relative;
+    background: #0799D5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: none; }
+    /* line 586, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    .create_case .centrales_info a {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      color: #fff; }
+      /* line 592, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+      .create_case .centrales_info a:hover {
+        color: #143345; }
+    /* line 597, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    .create_case .centrales_info p {
+      font-size: 14px;
+      margin-bottom: 5px; }
+      /* line 601, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+      .create_case .centrales_info p:last-of-type {
+        margin-bottom: 0; }
+  /* line 607, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .add_signer_bottom {
+    display: grid;
+    grid-template-columns: auto 200px; }
+  /* line 613, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .table select {
+    font-size: 12px; }
+  /* line 618, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .table td a {
+    text-decoration: underline;
+    display: block;
+    text-align: center; }
+    /* line 623, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+    .create_case .table td a i {
+      margin-left: 10px; }
+  /* line 630, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .create_case .create_case_bottom_links {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    column-gap: 10px; }
+
+/* line 642, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.settings h3 {
+  color: #143345;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 40px; }
+
+/* line 649, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.settings .form-group {
+  margin-bottom: 30px; }
+  /* line 652, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .settings .form-group h4 {
+    font-size: 18px;
+    color: #143345;
+    margin-bottom: 10px; }
+  /* line 658, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .settings .form-group .link {
+    padding: 6px 12px; }
+  /* line 662, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .settings .form-group .small {
+    width: 50px; }
+
+/* line 668, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.settings form h5 {
+  font-size: 18px;
+  color: #143345;
+  margin-bottom: 20px; }
+
+/* line 674, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.settings form input, .settings form select {
+  height: 40px; }
+
+/* line 680, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+.settings table a {
+  text-decoration: underline; }
+  /* line 683, /Applications/MAMP/htdocs/segurosmundial/admin/css/style_admin.scss */
+  .settings table a.delete {
+    text-decoration: none;
+    color: red;
+    font-size: 16px; }
 
 /*# sourceMappingURL=style_admin.css.map */

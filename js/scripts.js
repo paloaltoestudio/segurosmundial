@@ -1,5 +1,6 @@
 // Date picker
 $('#datepicker').datepicker();
+$('.datepicker').datepicker();
 
 // Validate Recaptcha
 
